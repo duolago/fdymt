@@ -1,0 +1,95 @@
+<view class="container lpp-gray-bg data-v-55718e06">
+    <view class="bg-white margin-top-sm data-v-55718e06" style="padding:0 26rpx 0 26rpx;">
+        <u-form bind:__l="__l" class="data-v-55718e06 vue-ref" data-ref="uForm" model="{{form}}" vueId="540176b6-1" vueSlots="{{['default']}}">
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="所在校区" labelAlign="left" labelWidth="260" prop="xiaoqu" required="{{true}}" rightIcon="arrow-right" vueId="{{'540176b6-2'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:click="__e" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^click',[ ['e0'] ] ],[ '^input',[ [ '__set_model',[ '$0','xiaoqu','$event',[] ],['form'] ] ] ] ]}}" disabled="{{true}}" placeholder="请选择校区" value="{{form.xiaoqu}}" vueId="{{'540176b6-3'+','+'540176b6-2'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="身份证号:" labelAlign="left" labelWidth="260" prop="idNum" required="{{true}}" vueId="{{'540176b6-4'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','idNum','$event',[] ],['form'] ] ] ] ]}}" placeholder="请输入身份证号" value="{{form.idNum}}" vueId="{{'540176b6-5'+','+'540176b6-4'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="年龄:" labelAlign="left" labelWidth="260" prop="age" vueId="{{'540176b6-6'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','age','$event',[] ],['form'] ] ] ] ]}}" placeholder="请输入年龄" type="number" value="{{form.age}}" vueId="{{'540176b6-7'+','+'540176b6-6'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="是否住校生" labelAlign="left" labelWidth="260" prop="inSchool" vueId="{{'540176b6-8'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-radio-group activeColor="52d1cc" bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','inSchool','$event',[] ],['form'] ] ] ] ]}}" value="{{form.inSchool}}" vueId="{{'540176b6-9'+','+'540176b6-8'}}" vueSlots="{{['default']}}">
+                    <u-radio bind:__l="__l" class="data-v-55718e06" name="是" vueId="{{'540176b6-10'+','+'540176b6-9'}}" vueSlots="{{['default']}}">是</u-radio>
+                    <u-radio bind:__l="__l" class="data-v-55718e06" name="否" vueId="{{'540176b6-11'+','+'540176b6-9'}}" vueSlots="{{['default']}}">否</u-radio>
+                </u-radio-group>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="校内居校健康管理 (写清楼号、宿舍号)" labelPosition="top" labelWidth="230" prop="xnjxjkgl" vueId="{{'540176b6-12'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','xnjxjkgl','$event',[] ],['form'] ] ] ] ]}}" placeholder="请输入校内居校健康管理 (写清楼号、宿舍号)" value="{{form.xnjxjkgl}}" vueId="{{'540176b6-13'+','+'540176b6-12'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="住校生原住宿情况 （写清楼栋及宿舍号）" labelPosition="top" labelWidth="230" prop="yzsqk" vueId="{{'540176b6-14'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','yzsqk','$event',[] ],['form'] ] ] ] ]}}" placeholder="请输入住校生原住宿情况 （写清楼栋及宿舍号）" value="{{form.yzsqk}}" vueId="{{'540176b6-15'+','+'540176b6-14'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="居住地健康码颜色" labelAlign="left" labelWidth="260" prop="jzys" vueId="{{'540176b6-16'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-radio-group activeColor="52d1cc" bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','jzys','$event',[] ],['form'] ] ] ] ]}}" value="{{form.jzys}}" vueId="{{'540176b6-17'+','+'540176b6-16'}}" vueSlots="{{['default']}}">
+                    <u-radio bind:__l="__l" class="data-v-55718e06" name="绿色" vueId="{{'540176b6-18'+','+'540176b6-17'}}" vueSlots="{{['default']}}">绿色</u-radio>
+                    <u-radio bind:__l="__l" class="data-v-55718e06" name="黄色" vueId="{{'540176b6-19'+','+'540176b6-17'}}" vueSlots="{{['default']}}">黄色</u-radio>
+                    <u-radio bind:__l="__l" class="data-v-55718e06" name="红色" vueId="{{'540176b6-20'+','+'540176b6-17'}}" vueSlots="{{['default']}}">红色</u-radio>
+                </u-radio-group>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="所在地是否为封控区" labelAlign="left" labelWidth="260" prop="szdwfkq" vueId="{{'540176b6-21'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-radio-group activeColor="52d1cc" bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','szdwfkq','$event',[] ],['form'] ] ] ] ]}}" value="{{form.szdwfkq}}" vueId="{{'540176b6-22'+','+'540176b6-21'}}" vueSlots="{{['default']}}">
+                    <u-radio bind:__l="__l" class="data-v-55718e06" name="否" vueId="{{'540176b6-23'+','+'540176b6-22'}}" vueSlots="{{['default']}}">否</u-radio>
+                    <u-radio bind:__l="__l" class="data-v-55718e06" name="是" vueId="{{'540176b6-24'+','+'540176b6-22'}}" vueSlots="{{['default']}}">是</u-radio>
+                </u-radio-group>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="完成开学返校前48小时内核酸检测的日期及结果" labelPosition="top" labelWidth="230" prop="dsrqjg" vueId="{{'540176b6-25'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','dsrqjg','$event',[] ],['form'] ] ] ] ]}}" placeholder="请输入完成开学返校前48小时内核酸检测的日期及结果" value="{{form.dsrqjg}}" vueId="{{'540176b6-26'+','+'540176b6-25'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="辅导员 及联系方式" labelPosition="top" labelWidth="230" prop="fdylxfs" vueId="{{'540176b6-27'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','fdylxfs','$event',[] ],['form'] ] ] ] ]}}" placeholder="请输入辅导员 及联系方式" value="{{form.fdylxfs}}" vueId="{{'540176b6-28'+','+'540176b6-27'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="学生本人在“需排查的风险区域”的居住地 (应写清省市县及具体地址、或酒店)" labelPosition="top" labelWidth="230" prop="fxqjzd" vueId="{{'540176b6-29'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','fxqjzd','$event',[] ],['form'] ] ] ] ]}}" placeholder="请输入学生本人在“需排查的风险区域”的居住地 (应写清省市县及具体地址、或酒店)" value="{{form.fxqjzd}}" vueId="{{'540176b6-30'+','+'540176b6-29'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="学生本人或所接触校外排查地区人员居住地或途经位置所属的“需排查的风险区域”" labelPosition="top" labelWidth="230" prop="jcfxq" vueId="{{'540176b6-31'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','jcfxq','$event',[] ],['form'] ] ] ] ]}}" placeholder="请输入学生本人或所接触校外排查地区人员居住地或途经位置所属的“需排查的风险区域”" value="{{form.jcfxq}}" vueId="{{'540176b6-32'+','+'540176b6-31'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="开始健康管理管控时间" labelPosition="top" labelWidth="230" prop="ksjkgl" vueId="{{'540176b6-33'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <uni-datetime-picker bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','ksjkgl','$event',[] ],['form'] ] ] ] ]}}" type="date" value="{{form.ksjkgl}}" vueId="{{'540176b6-34'+','+'540176b6-33'}}"></uni-datetime-picker>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="离开排查地区日期" labelPosition="top" labelWidth="230" prop="lkpcrq" vueId="{{'540176b6-35'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <uni-datetime-picker bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','lkpcrq','$event',[] ],['form'] ] ] ] ]}}" type="date" value="{{form.lkpcrq}}" vueId="{{'540176b6-36'+','+'540176b6-35'}}"></uni-datetime-picker>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="最近一次的入校日期（开学返校后若离开校区所在地城市，应填报最近一次入校日期）" labelPosition="top" labelWidth="230" prop="zjrxsj" vueId="{{'540176b6-37'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <uni-datetime-picker bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','zjrxsj','$event',[] ],['form'] ] ] ] ]}}" type="date" value="{{form.zjrxsj}}" vueId="{{'540176b6-38'+','+'540176b6-37'}}"></uni-datetime-picker>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="旅居史类型" labelAlign="left" labelWidth="260" prop="ljlx" vueId="{{'540176b6-39'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-radio-group bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','ljlx','$event',[] ],['form'] ] ] ] ]}}" value="{{form.ljlx}}" vueId="{{'540176b6-40'+','+'540176b6-39'}}" vueSlots="{{['default']}}">
+                    <u-radio bind:__l="__l" class="data-v-55718e06" name="居住" vueId="{{'540176b6-41'+','+'540176b6-40'}}" vueSlots="{{['default']}}">居住</u-radio>
+                    <u-radio bind:__l="__l" class="data-v-55718e06" name="旅居" vueId="{{'540176b6-42'+','+'540176b6-40'}}" vueSlots="{{['default']}}">旅居</u-radio>
+                    <u-radio bind:__l="__l" class="data-v-55718e06" name="途经并经停或逗留" vueId="{{'540176b6-43'+','+'540176b6-40'}}" vueSlots="{{['default']}}">途经并经停或逗留</u-radio>
+                </u-radio-group>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="学生本人途经并经停或逗留“需排查的风险区域”的具体位置及情况" labelPosition="top" labelWidth="260" prop="xpcfxq" vueId="{{'540176b6-44'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','xpcfxq','$event',[] ],['form'] ] ] ] ]}}" placeholder="请输入学生本人途经并经停或逗留“需排查的风险区域”的具体位置及情况" value="{{form.xpcfxq}}" vueId="{{'540176b6-45'+','+'540176b6-44'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="校外居家健康管理 (应写清省市县及具体地址、或酒店) (若摸排时正在旅途中，请填写“目前在旅途中，最终目的地为XX城市”，具体情况写在备注栏）" labelPosition="top" labelWidth="230" prop="xwjkgl" vueId="{{'540176b6-46'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','xwjkgl','$event',[] ],['form'] ] ] ] ]}}" placeholder="请输入校外居家健康管理信息" value="{{form.xwjkgl}}" vueId="{{'540176b6-47'+','+'540176b6-46'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="是否已履行正式请假审批手续 (是/否) (含开学后暂缓返校学生)" labelPosition="top" labelWidth="260" prop="lxspsx" vueId="{{'540176b6-48'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-radio-group bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','lxspsx','$event',[] ],['form'] ] ] ] ]}}" value="{{form.lxspsx}}" vueId="{{'540176b6-49'+','+'540176b6-48'}}" vueSlots="{{['default']}}">
+                    <u-radio bind:__l="__l" class="data-v-55718e06" name="是" vueId="{{'540176b6-50'+','+'540176b6-49'}}" vueSlots="{{['default']}}">是</u-radio>
+                    <u-radio bind:__l="__l" class="data-v-55718e06" name="否" vueId="{{'540176b6-51'+','+'540176b6-49'}}" vueSlots="{{['default']}}">否</u-radio>
+                </u-radio-group>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="请假原因" labelPosition="top" labelWidth="230" prop="reason" vueId="{{'540176b6-52'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','reason','$event',[] ],['form'] ] ] ] ]}}" placeholder="请假原因" value="{{form.reason}}" vueId="{{'540176b6-53'+','+'540176b6-52'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="(密接史、接触史: 疾控部门通知为密接者/疾控部门通知为次密接者/疾控部门通知为潜在密接者/疾控部门通知为时空伴随者/接收快件存在受到新冠病毒污染风险/接触校外排查地区人员)" labelPosition="top" labelWidth="230" prop="mjsjcs" vueId="{{'540176b6-54'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','mjsjcs','$event',[] ],['form'] ] ] ] ]}}" placeholder="请输入(密接史、接触史: 疾控部门通知为密接者/疾控部门通知为次密接者/疾控部门通知为潜在密接者/疾控部门通知为时空伴随者/接收快件存在受到新冠病毒污染风险/接触校外排查地区人员)" value="{{form.mjsjcs}}" vueId="{{'540176b6-55'+','+'540176b6-54'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-55718e06" label="备注" labelPosition="top" labelWidth="230" prop="beizhu" vueId="{{'540176b6-56'+','+'540176b6-1'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','beizhu','$event',[] ],['form'] ] ] ] ]}}" placeholder="（填写相关行程轨迹，含时间地点信息；落实个人防护情况）" value="{{form.beizhu}}" vueId="{{'540176b6-57'+','+'540176b6-56'}}"></u-input>
+            </u-form-item>
+        </u-form>
+    </view>
+    <u-gap bind:__l="__l" class="data-v-55718e06" height="240" vueId="540176b6-58"></u-gap>
+    <view class="fixed-bottom-area data-v-55718e06">
+        <view bindtap="__e" class="custom-p-button data-v-55718e06" data-event-opts="{{[ [ 'tap',[ [ 'submitForm',['$event'] ] ] ] ]}}">提交</view>
+    </view>
+    <u-select bind:__l="__l" bind:confirm="__e" bind:input="__e" class="data-v-55718e06" data-event-opts="{{[ [ '^confirm',[ ['confirm'] ] ],[ '^input',[ [ '__set_model',[ '','szSelector','$event',[] ] ] ] ] ]}}" list="{{list}}" mode="single-column" value="{{szSelector}}" vueId="540176b6-59"></u-select>
+    <u-toast bind:__l="__l" class="data-v-55718e06 vue-ref" data-ref="uToast" position="top" vueId="540176b6-60"></u-toast>
+</view>

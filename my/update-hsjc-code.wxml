@@ -1,0 +1,17 @@
+<view class="container">
+    <u-card bind:__l="__l" margin="40rpx 30rpx" showHead="{{false}}" showFoot="{{false}}" vueId="0741135a-1" vueSlots="{{['body']}}">
+        <view class="binding-card-content" slot="body">
+            <u-form bind:__l="__l" class="vue-ref" data-ref="uForm" model="{{form}}" vueId="{{'0741135a-2'+','+'0741135a-1'}}" vueSlots="{{['default']}}">
+                <u-form-item bind:__l="__l" label=" " labelPosition="top" labelWidth="120" prop="nucleinQrCodeImage" vueId="{{'0741135a-3'+','+'0741135a-2'}}" vueSlots="{{['default']}}">
+                    <view class="flex justify-center">
+                        <lpp-upload bind:__l="__l" bind:input="__e" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','nucleinQrCodeImage','$event',[] ],['form'] ] ] ] ]}}" height="{{300}}" imageType="4" onlySelect="{{true}}" uploadProvider="{{1}}" uploadText="上传核酸检测二维码" value="{{form.nucleinQrCodeImage}}" vueId="{{'0741135a-4'+','+'0741135a-3'}}" width="{{200}}"></lpp-upload>
+                    </view>
+                </u-form-item>
+                <view style="margin-top:20rpx;">
+                    <button bindtap="__e" class="c_primary_btn" data-event-opts="{{[ [ 'tap',[ [ 'submitForm',['$event'] ] ] ] ]}}" style="font-size:30rpx;">提交核酸检测二维码</button>
+                </view>
+            </u-form>
+        </view>
+    </u-card>
+    <u-toast bind:__l="__l" class="vue-ref" data-ref="uToast" position="top" vueId="0741135a-5"></u-toast>
+</view>

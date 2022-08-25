@@ -1,0 +1,54 @@
+<view class="container data-v-54ba3b20">
+    <view class="app-categorys u-wrap data-v-54ba3b20" style="{{'height:'+'calc(100vh - 55px)'+';'}}">
+        <view class="u-menu-wrap data-v-54ba3b20">
+            <scroll-view class="u-tab-view menu-scroll-view data-v-54ba3b20" scrollTop="{{scrollTop}}" scrollWithAnimation="{{true}}" scrollY="{{true}}">
+                <view class="flex data-v-54ba3b20" style="padding:10rpx 30rpx;background-color:#f6f6f6;">
+                    <u-icon bind:__l="__l" bind:click="__e" class="data-v-54ba3b20" data-event-opts="{{[ [ '^click',[ ['e0'] ] ] ]}}" label="展开" labelPos="left" name="arrow-right" size="35" vueId="8f9ab430-1"></u-icon>
+                </view>
+                <view bindtap="__e" class="{{['u-tab-item','data-v-54ba3b20',current==index?'u-tab-item-active':'']}}" data-current="{{index}}" data-event-opts="{{[ [ 'tap',[ [ 'swichMenu',[index] ] ] ] ]}}" wx:for="{{studentList}}" wx:key="index">
+                    <text class="u-line-1 data-v-54ba3b20">{{item.name}}</text>
+                </view>
+            </scroll-view>
+            <scroll-view class="data-v-54ba3b20" scrollWithAnimation="{{true}}" scrollY="{{true}}">
+                <view class="data-v-54ba3b20" style="width:100%;overflow:auto;position:relative;">
+                    <view class="data-v-54ba3b20" style="position:fixed;z-index:100;width:calc(100vw - 200rpx);padding:10rpx;">
+                        <u-search bind:__l="__l" bind:change="__e" bind:input="__e" class="data-v-54ba3b20" data-event-opts="{{[ [ '^change',[ ['changeKeyword'] ] ],[ '^input',[ [ '__set_model',[ '','searchKeyword','$event',[] ] ] ] ] ]}}" placeholder="输入姓名过滤" showAction="{{false}}" value="{{searchKeyword}}" vueId="8f9ab430-2"></u-search>
+                    </view>
+                    <u-gap bind:__l="__l" class="data-v-54ba3b20" height="80" vueId="8f9ab430-3"></u-gap>
+                    <scroll-view class="right-box data-v-54ba3b20" hidden="{{!(current==index)}}" scrollY="{{true}}" wx:for="{{$root.l2}}" wx:key="index">
+                        <view class="data-v-54ba3b20" style="text-align:center;margin-top:20rpx;">{{className}}</view>
+                        <view class="page-view data-v-54ba3b20" wx:for="{{item.l1}}" wx:for-index="index1" wx:for-item="item1" wx:key="index1">
+                            <u-divider bind:__l="__l" class="data-v-54ba3b20" color="#333333" halfWidth="50" vueId="{{'8f9ab430-4-'+index+'-'+index1}}" vueSlots="{{['default']}}">{{''+studentKeyNameMap[index1]+'('+item1[$orig].length+'/'+stuNum+')'+''}}</u-divider>
+                            <view class="class-item data-v-54ba3b20">
+                                <view class="item-container data-v-54ba3b20">
+                                    <view bindtap="__e" class="thumb-box data-v-54ba3b20" data-event-opts="{{[ [ 'tap',[ [ 'clickStudent',['$0'],[ [ ['filtratedStudentList','',index],['pMap','',index1],['','',index2] ] ] ] ] ] ]}}" wx:for="{{item1.l0}}" wx:for-index="index2" wx:for-item="item2" wx:key="index2">
+                                        <u-image bind:__l="__l" class="data-v-54ba3b20" fade="{{false}}" height="64" mode="aspectFit" showLoading="{{false}}" src="{{item2.m0}}" vueId="{{'8f9ab430-5-'+index+'-'+index1+'-'+index2}}" width="64"></u-image>
+                                        <view class="item-menu-name data-v-54ba3b20">{{item2.m1}}</view>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </scroll-view>
+                    <view class="flex justify-center text-center margin-top-lg data-v-54ba3b20">
+                        <u-loading bind:__l="__l" class="data-v-54ba3b20" mode="circle" show="{{loading}}" size="60" vueId="8f9ab430-6"></u-loading>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+    <u-popup bind:__l="__l" bind:input="__e" class="data-v-54ba3b20" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','showClassList','$event',[] ] ] ] ] ]}}" value="{{showClassList}}" vueId="8f9ab430-7" vueSlots="{{['default']}}">
+        <view class="flex justify-end data-v-54ba3b20">
+            <view bindtap="__e" class="data-v-54ba3b20" data-event-opts="{{[ [ 'tap',[ [ 'e1',['$event'] ] ] ] ]}}" style="padding:10rpx;">
+                <u-icon bind:__l="__l" class="data-v-54ba3b20" name="close" size="40" vueId="{{'8f9ab430-8'+','+'8f9ab430-7'}}"></u-icon>
+            </view>
+        </view>
+        <scroll-view class="data-v-54ba3b20" scrollWithAnimation="{{true}}" scrollY="{{true}}">
+            <view class="data-v-54ba3b20" style="height:90vh;min-width:50vw;">
+                <view bindtap="__e" class="{{['u-tab-item','data-v-54ba3b20',current==index?'u-tab-item-active':'']}}" data-current="{{index}}" data-event-opts="{{[ [ 'tap',[ [ 'swichMenu',[index] ] ] ] ]}}" wx:for="{{studentList}}" wx:key="index">
+                    <text class="u-line-1 data-v-54ba3b20">{{item.name.length>10?item.name:item.fullName}}</text>
+                </view>
+            </view>
+        </scroll-view>
+    </u-popup>
+    <u-toast bind:__l="__l" class="data-v-54ba3b20 vue-ref" data-ref="uToast" position="top" vueId="8f9ab430-9"></u-toast>
+</view>

@@ -1,0 +1,135 @@
+.text-cut-2.data-v-7ed9e1c3 {
+    -webkit-line-clamp: 2;
+}
+
+.text-cut-1.data-v-7ed9e1c3,.text-cut-2.data-v-7ed9e1c3 {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.text-cut-1.data-v-7ed9e1c3 {
+    -webkit-line-clamp: 1;
+}
+
+.flex.data-v-7ed9e1c3 {
+    display: flex;
+}
+
+.basis-xs.data-v-7ed9e1c3 {
+    flex-basis: 20%;
+}
+
+.basis-sm.data-v-7ed9e1c3 {
+    flex-basis: 40%;
+}
+
+.basis-df.data-v-7ed9e1c3 {
+    flex-basis: 50%;
+}
+
+.basis-lg.data-v-7ed9e1c3 {
+    flex-basis: 60%;
+}
+
+.basis-xl.data-v-7ed9e1c3 {
+    flex-basis: 80%;
+}
+
+.flex-sub.data-v-7ed9e1c3 {
+    flex: 1;
+}
+
+.flex-twice.data-v-7ed9e1c3 {
+    flex: 2;
+}
+
+.flex-treble.data-v-7ed9e1c3 {
+    flex: 3;
+}
+
+.flex-direction.data-v-7ed9e1c3 {
+    flex-direction: column;
+}
+
+.flex-wrap.data-v-7ed9e1c3 {
+    flex-wrap: wrap;
+}
+
+.align-start.data-v-7ed9e1c3 {
+    align-items: flex-start;
+}
+
+.align-end.data-v-7ed9e1c3 {
+    align-items: flex-end;
+}
+
+.align-center.data-v-7ed9e1c3 {
+    align-items: center;
+}
+
+.self-start.data-v-7ed9e1c3 {
+    align-self: flex-start;
+}
+
+.self-center.data-v-7ed9e1c3 {
+    align-self: flex-center;
+}
+
+.self-end.data-v-7ed9e1c3 {
+    align-self: flex-end;
+}
+
+.self-stretch.data-v-7ed9e1c3 {
+    align-self: stretch;
+}
+
+.align-stretch.data-v-7ed9e1c3 {
+    align-items: stretch;
+}
+
+.justify-start.data-v-7ed9e1c3 {
+    justify-content: flex-start;
+}
+
+.justify-end.data-v-7ed9e1c3 {
+    justify-content: flex-end;
+}
+
+.justify-center.data-v-7ed9e1c3 {
+    justify-content: center;
+}
+
+.justify-between.data-v-7ed9e1c3 {
+    justify-content: space-between;
+}
+
+.justify-around.data-v-7ed9e1c3 {
+    justify-content: space-around;
+}
+
+.u-back-top.data-v-7ed9e1c3 {
+    background-color: #e1e1e1;
+    color: #606266;
+    height: 80rpx;
+    justify-content: center;
+    position: fixed;
+    transition: opacity .4s;
+    width: 80rpx;
+    z-index: 9;
+}
+
+.u-back-top.data-v-7ed9e1c3,.u-back-top__content.data-v-7ed9e1c3 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+}
+
+.u-back-top__content__tips.data-v-7ed9e1c3 {
+    font-size: 24rpx;
+    line-height: 1;
+    transform: scale(.8);
+}

@@ -1,0 +1,29 @@
+<view class="container data-v-e4a5b406">
+    <u-sticky bind:__l="__l" class="data-v-e4a5b406" enable="{{stickyEnable}}" offsetTop="0" vueId="77ed9f80-1" vueSlots="{{['default']}}">
+        <view class="data-v-e4a5b406" style="border-bottom:1px solid #dadcdc;">
+            <u-tabs activeColor="#52d1cc" bind:__l="__l" bind:change="__e" class="data-v-e4a5b406" current="{{current}}" data-event-opts="{{[ [ '^change',[ ['change'] ] ] ]}}" isScroll="{{false}}" list="{{tabList}}" vueId="{{'77ed9f80-2'+','+'77ed9f80-1'}}"></u-tabs>
+        </view>
+    </u-sticky>
+    <view bindtap="__e" class="record-item data-v-e4a5b406" data-event-opts="{{[ [ 'tap',[ [ 'goToEditPage',[index] ] ] ] ]}}" wx:for="{{$root.l0}}" wx:key="index">
+        <view class="flex justify-start flex-direction data-v-e4a5b406" style="padding:30rpx;">
+            <view class="flex justify-between data-v-e4a5b406" style="font-size:32rpx;margin:30rpx 0;">
+                <view class="data-v-e4a5b406">
+                    <text class="data-v-e4a5b406" style="color:#797979;letter-spacing:11rpx;">填报人</text>
+                    <text class="data-v-e4a5b406">：</text>
+                    <text class="data-v-e4a5b406">{{qrCodeObj.name||''}}</text>
+                </view>
+            </view>
+            <view class="data-v-e4a5b406" style="font-size:32rpx;">
+                <text class="data-v-e4a5b406" style="color:#797979;">{{(item[$orig].tianbao==0?'生成填报时间':'填报时间')+'：'}}</text>
+                <text class="data-v-e4a5b406">{{item.g0}}</text>
+            </view>
+        </view>
+        <u-line bind:__l="__l" class="data-v-e4a5b406" color="#e2e2e2" vueId="{{'77ed9f80-3-'+index}}"></u-line>
+    </view>
+    <view class="data-v-e4a5b406" style="padding-top:100rpx;" wx:if="{{tabList[current].loadStatus!=='loadmore'&&tabList[current].loadStatus!=='loading'&&tabList[current].list.length===0}}">
+        <u-empty bind:__l="__l" class="data-v-e4a5b406" mode="list" text="无摸排记录" vueId="77ed9f80-4"></u-empty>
+    </view>
+    <u-loadmore bind:__l="__l" bind:loadmore="__e" class="data-v-e4a5b406" color="#727679" data-event-opts="{{[ [ '^loadmore',[ ['loadmore'] ] ] ]}}" marginBottom="20" marginTop="30" status="{{tabList[current].loadStatus}}" vueId="77ed9f80-5" wx:else></u-loadmore>
+    <u-gap bind:__l="__l" class="data-v-e4a5b406" height="50" vueId="77ed9f80-6"></u-gap>
+    <u-back-top bind:__l="__l" bottom="{{200}}" class="data-v-e4a5b406" customStyle="{{backgroundColor:'#FFFFFF',border:'2rpx solid #e6e3e3'}}" iconStyle="{{color:'rgb(93 92 92)'}}" right="{{40}}" scrollTop="{{tabList[current].scrollTop}}" style="z-index:100;" tips="顶部" top="{{100}}" vueId="77ed9f80-7"></u-back-top>
+</view>

@@ -1,0 +1,20 @@
+<view catchtap="__e" class="{{['u-card','data-v-0f6757de',border?'u-border':'',full?'u-card-full':'',borderRadius>0?'u-card--border':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'click',['$event'] ] ] ] ]}}" style="{{'border-radius:'+borderRadius+'rpx'+';'+'margin:'+margin+';'+'box-shadow:'+boxShadow+';'}}">
+    <view bindtap="__e" class="{{['u-card__head','data-v-0f6757de',headBorderBottom?'u-border-bottom':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'headClick',['$event'] ] ] ] ]}}" style="{{$root.s0}}" wx:if="{{showHead}}">
+        <view class="u-flex u-row-between data-v-0f6757de" wx:if="{{!$slots.head}}">
+            <view class="u-card__head--left u-flex u-line-1 data-v-0f6757de" wx:if="{{title}}">
+                <image class="u-card__head--left__thumb data-v-0f6757de" mode="aattrtfull" src="{{thumb}}" style="{{'height:'+thumbWidth+'rpx'+';'+'width:'+thumbWidth+'rpx'+';'+'border-radius:'+(thumbCircle?'100rpx':'6rpx')+';'}}" wx:if="{{thumb}}"></image>
+                <text class="u-card__head--left__title u-line-1 data-v-0f6757de" style="{{'font-size:'+titleSize+'rpx'+';'+'color:'+titleColor+';'}}">{{''+title+''}}</text>
+            </view>
+            <view class="u-card__head--right u-line-1 data-v-0f6757de" wx:if="{{subTitle}}">
+                <text class="u-card__head__title__text data-v-0f6757de" style="{{'font-size:'+subTitleSize+'rpx'+';'+'color:'+subTitleColor+';'}}">{{''+subTitle+''}}</text>
+            </view>
+        </view>
+        <slot name="head" wx:else></slot>
+    </view>
+    <view bindtap="__e" class="u-card__body data-v-0f6757de" data-event-opts="{{[ [ 'tap',[ [ 'bodyClick',['$event'] ] ] ] ]}}" style="{{$root.s1}}">
+        <slot name="body"></slot>
+    </view>
+    <view bindtap="__e" class="{{['u-card__foot','data-v-0f6757de',footBorderTop?'u-border-top':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'footClick',['$event'] ] ] ] ]}}" style="{{$root.s2}}" wx:if="{{showFoot}}">
+        <slot name="foot"></slot>
+    </view>
+</view>

@@ -1,0 +1,176 @@
+<view class="container data-v-c3aecdbc">
+    <view class="fixed-top-background data-v-c3aecdbc" style="{{'height:'+fixedTopHeight+'rpx'+';'}}"></view>
+    <view class="data-v-c3aecdbc" style="{{'height:'+fixedTopHeight+'rpx'+';'}}"></view>
+    <u-card bind:__l="__l" class="data-v-c3aecdbc" margin="0px 30rpx 30rpx 30rpx" showHead="{{true}}" showFoot="{{false}}" vueId="8dd740cc-1" vueSlots="{{['head','body']}}">
+        <view class="flex justify-between data-v-c3aecdbc" slot="head">
+            <view class="flex flex-direction justify-between data-v-c3aecdbc">
+                <view class="flex align-center data-v-c3aecdbc" style="font-size:42rpx;color:#333333;">
+                    <u-icon bind:__l="__l" bind:click="__e" class="data-v-c3aecdbc" color="#6273e7" data-event-opts="{{[ [ '^click',[ ['e0'] ] ] ]}}" name="{{privacy?'eye-off':'eye-fill'}}" size="40" vueId="{{'8dd740cc-2'+','+'8dd740cc-1'}}"></u-icon>
+                    <text class="data-v-c3aecdbc" style="margin-left:10rpx;">{{''+(privacy?$root.m0:userInfo.name)+(isVisitor?'(游客)':'')+''}}</text>
+                    <u-icon bind:__l="__l" class="data-v-c3aecdbc" name="/static/user.png" size="40" vueId="{{'8dd740cc-3'+','+'8dd740cc-1'}}" wx:if="{{userInfo.canManageClass}}"></u-icon>
+                </view>
+                <view class="data-v-c3aecdbc" style="font-size:26rpx;color:#797979;" wx:if="{{userInfo._class}}">{{''+userInfo._class+''}}</view>
+            </view>
+            <view class="data-v-c3aecdbc" style="opacity:0.4;">
+                <u-icon bind:__l="__l" class="data-v-c3aecdbc" name="/static/u2.jpg" size="104" vueId="{{'8dd740cc-4'+','+'8dd740cc-1'}}"></u-icon>
+            </view>
+        </view>
+        <view class="flex justify-center flex-direction align-center data-v-c3aecdbc" slot="body">
+            <label class="timer _span data-v-c3aecdbc">
+                <text class="data-v-c3aecdbc">{{$root.g0}}</text>
+                <text class="data-v-c3aecdbc" style="font-weight:700;">{{'（'+countDownSec+'）'}}</text>
+            </label>
+            <view class="data-v-c3aecdbc" style="position:relative;">
+                <view bindtap="__e" class="data-v-c3aecdbc" data-event-opts="{{[ [ 'tap',[ [ 'getQrcodeInfo',['$event'] ] ] ] ]}}" hidden="{{!(qrcodeSwitchEnable==0)}}" style="{{'width:424rpx;height:424rpx;display:flex;justify-content:center;align-items:center;border-radius:10rpx;'+'border:'+(qrcodeSwitchEnable==0?'4rpx solid'+qrCodoColor:'none')+';'+'height:'+(qrcodeSwitchEnable==0?'424rpx':'0')+';'+'opacity:'+(qrcodeSwitchEnable==0?1:0)+';'+'padding-top:'+(qrcodeSwitchEnable==0?'4rpx':'')+';'}}">
+                    <tki-qrcode bind:__l="__l" cid="qrcode" class="data-v-c3aecdbc vue-ref" data-ref="qrcode" foreground="{{qrCodoColor}}" loadMake="{{true}}" loadingText="二维码刷新中" lv="{{1}}" onval="{{true}}" pdground="{{qrCodoColor}}" showLoading="{{false}}" size="{{400}}" unit="upx" val="{{userInfo.qrCode}}" vueId="{{'8dd740cc-5'+','+'8dd740cc-1'}}"></tki-qrcode>
+                </view>
+                <view bindtap="__e" class="data-v-c3aecdbc" data-event-opts="{{[ [ 'tap',[ [ 'getFDYMTQrCode',['$event'] ] ] ] ]}}" hidden="{{!(qrcodeSwitchEnable==1)}}" style="{{'width:424rpx;height:424rpx;display:flex;justify-content:center;align-items:center;border:4rpx solid #262636;border-radius:10rpx;'+'border:'+(qrcodeSwitchEnable==1?'4rpx solid #262636':'none')+';'+'height:'+(qrcodeSwitchEnable==1?'424rpx':'0')+';'+'opacity:'+(qrcodeSwitchEnable==1?1:0)+';'+'padding-top:'+(qrcodeSwitchEnable==1?'4rpx':'')+';'}}">
+                    <tki-qrcode bind:__l="__l" cid="fudaYikatongQrcode" class="data-v-c3aecdbc vue-ref" data-custom-hidden="{{!(qrcodeSwitchEnable==1)}}" data-ref="fudaYikatongQrcode" foreground="#262636" loadMake="{{true}}" loadingText="二维码刷新中" lv="{{1}}" onval="{{true}}" pdground="#262636" showLoading="{{false}}" size="{{400}}" unit="upx" val="{{FDYMTQrCode}}" vueId="{{'8dd740cc-6'+','+'8dd740cc-1'}}"></tki-qrcode>
+                </view>
+                <view class="flex justify-center align-center data-v-c3aecdbc" style="width:424rpx;height:424rpx;box-shadow:0rpx 4rpx 10rpx rgba(0, 0, 0, 12%);" wx:if="{{qrcodeSwitchEnable==2}}">
+                    <u-image bind:__l="__l" class="data-v-c3aecdbc" fade="{{false}}" height="410rpx" mode="scaleToFill" showLoading="{{false}}" src="{{userInfo.faceImage}}" vueId="{{'8dd740cc-7'+','+'8dd740cc-1'}}" vueSlots="{{['error']}}" width="308rpx">
+                        <view bindtap="__e" class="flex justify-center align-center data-v-c3aecdbc" data-event-opts="{{[ [ 'tap',[ [ 'goToUpdateFaceImage',['$event'] ] ] ] ]}}" slot="error">
+                            <view class="data-v-c3aecdbc" style="text-decoration:underline;color:#007AFF;">去完善</view>
+                        </view>
+                    </u-image>
+                </view>
+                <view class="qrcode-switch data-v-c3aecdbc" wx:if="{{authorizedSuccess||isVisitor}}">
+                    <view bindtap="__e" class="{{['switch-block','switch-top-border','','data-v-c3aecdbc',qrcodeSwitchEnable==0?'actived-block':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'qrcodeSwitchEvent',[0] ] ] ] ]}}">
+                        <u-icon bind:__l="__l" class="data-v-c3aecdbc" label="亮码" labelColor="#333333" labelPos="bottom" labelSize="22" marginTop="10" name="/static/u12.png" size="36" vueId="{{'8dd740cc-8'+','+'8dd740cc-1'}}"></u-icon>
+                    </view>
+                    <view bindtap="__e" class="{{['switch-block','switch-middle-border','data-v-c3aecdbc',qrcodeSwitchEnable==1?'actived-block':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'qrcodeSwitchEvent',[1] ] ] ] ]}}" wx:if="{{authorizedSuccess}}">
+                        <u-icon bind:__l="__l" class="data-v-c3aecdbc" label="消费" labelColor="#333333" labelPos="bottom" labelSize="22" marginTop="10" name="/static/u45.png" size="36" vueId="{{'8dd740cc-9'+','+'8dd740cc-1'}}"></u-icon>
+                    </view>
+                    <view bindtap="__e" class="{{['switch-block','switch-bottom-border','data-v-c3aecdbc',qrcodeSwitchEnable==2?'actived-block':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'qrcodeSwitchEvent',[2] ] ] ] ]}}">
+                        <u-icon bind:__l="__l" class="data-v-c3aecdbc" label="人像" labelColor="#333333" labelPos="bottom" labelSize="22" marginTop="10" name="/static/u11.png" size="36" vueId="{{'8dd740cc-10'+','+'8dd740cc-1'}}"></u-icon>
+                    </view>
+                </view>
+            </view>
+            <label class="_span data-v-c3aecdbc" style="font-size:38rpx;font-weight:700;color:#333333;margin-top:20rpx;">
+                <label class="_span data-v-c3aecdbc" style="{{'color:'+(qrcodeSwitchEnable==0?qrCodoColor:'#262636')+';'}}">{{''+( (qrcodeSwitchEnable==0?userInfo.healthDescription:qrcodeSwitchEnable==1?'一订单一码，点击刷新':' ')||'' )+''}}</label>
+            </label>
+            <view class="button-group data-v-c3aecdbc" wx:if="{{authorizedSuccess&&userInfo.healthReport==1}}">
+                <view bindtap="__e" class="x-blue-button x-blue-button_actived data-v-c3aecdbc" data-event-opts="{{[ [ 'tap',[ [ 'goToAddDailyHealth',[false] ] ] ] ]}}">正常打卡</view>
+                <view bindtap="__e" class="x-blue-button x-blue-button_actived data-v-c3aecdbc" data-event-opts="{{[ [ 'tap',[ [ 'goToAddDailyHealth',[true] ] ] ] ]}}">异动打卡</view>
+            </view>
+        </view>
+    </u-card>
+    <u-card bind:__l="__l" class="data-v-c3aecdbc" padding="0" showHead="{{false}}" showFoot="{{false}}" vueId="8dd740cc-11" vueSlots="{{['body']}}" wx:if="{{authorizedSuccess||isVisitor}}">
+        <view class="msg-container data-v-c3aecdbc" slot="body">
+            <u-cell-group bind:__l="__l" border="{{false}}" class="data-v-c3aecdbc" vueId="{{'8dd740cc-12'+','+'8dd740cc-11'}}" vueSlots="{{['default']}}">
+                <u-cell-item arrow="{{true}}" bind:__l="__l" bind:click="__e" borderBottom="{{false}}" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^click',[ ['goToMsgList'] ] ] ]}}" title="消息提醒" titleStyle="{{fontSize:'28rpx',color:'#333333',marginLeft:'10rpx'}}" vueId="{{'8dd740cc-13'+','+'8dd740cc-12'}}" vueSlots="{{['icon','label']}}">
+                    <view class="flex align-center data-v-c3aecdbc" slot="icon" style="padding-right:20rpx;position:relative;">
+                        <u-icon bind:__l="__l" class="data-v-c3aecdbc" name="/static/u58.png" size="60" vueId="{{'8dd740cc-14'+','+'8dd740cc-13'}}"></u-icon>
+                        <u-badge absolute="{{true}}" bind:__l="__l" class="data-v-c3aecdbc" count="{{unread}}" offset="{{[-8,0]}}" type="error" vueId="{{'8dd740cc-15'+','+'8dd740cc-13'}}" wx:if="{{unread!==0}}"></u-badge>
+                    </view>
+                    <view class="text-cut-1 data-v-c3aecdbc" slot="label" style="font-size:22rpx;">{{''+(latestMsg.title||'最新消息')+''}}</view>
+                </u-cell-item>
+            </u-cell-group>
+        </view>
+    </u-card>
+    <u-card bind:__l="__l" class="data-v-c3aecdbc" padding="0" showHead="{{false}}" showFoot="{{false}}" vueId="8dd740cc-16" vueSlots="{{['body']}}" wx:if="{{authorizedSuccess||isVisitor}}">
+        <view class="data-v-c3aecdbc" slot="body">
+            <u-cell-group bind:__l="__l" border="{{false}}" class="data-v-c3aecdbc" vueId="{{'8dd740cc-17'+','+'8dd740cc-16'}}" vueSlots="{{['default']}}" wx:if="{{authorizedSuccess}}">
+                <u-cell-item arrow="{{true}}" bind:__l="__l" bind:click="__e" borderBottom="{{true}}" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^click',[ ['goToYKTPage'] ] ] ]}}" title="一卡通首页" titleStyle="{{toolCardItemTitleStyle}}" vueId="{{'8dd740cc-18'+','+'8dd740cc-17'}}" vueSlots="{{['icon']}}">
+                    <view class="flex align-center data-v-c3aecdbc" slot="icon" style="padding-right:20rpx;">
+                        <u-icon bind:__l="__l" class="data-v-c3aecdbc" name="/static/u478.png" size="60" vueId="{{'8dd740cc-19'+','+'8dd740cc-18'}}"></u-icon>
+                    </view>
+                </u-cell-item>
+                <u-cell-item arrow="{{true}}" bind:__l="__l" bind:click="__e" borderBottom="{{true}}" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^click',[ ['goToReportListPage'] ] ] ]}}" title="出行报备" titleStyle="{{toolCardItemTitleStyle}}" vueId="{{'8dd740cc-20'+','+'8dd740cc-17'}}" vueSlots="{{['icon']}}">
+                    <view class="flex align-center data-v-c3aecdbc" slot="icon" style="padding-right:20rpx;">
+                        <u-icon bind:__l="__l" class="data-v-c3aecdbc" name="/static/go.png" size="60" vueId="{{'8dd740cc-21'+','+'8dd740cc-20'}}"></u-icon>
+                    </view>
+                </u-cell-item>
+                <u-cell-item arrow="{{true}}" bind:__l="__l" bind:click="__e" borderBottom="{{true}}" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^click',[ ['goToMgrRecordListPage'] ] ] ]}}" title="返校管理" titleStyle="{{toolCardItemTitleStyle}}" vueId="{{'8dd740cc-22'+','+'8dd740cc-17'}}" vueSlots="{{['icon']}}">
+                    <view class="flex align-center data-v-c3aecdbc" slot="icon" style="padding-right:20rpx;">
+                        <u-icon bind:__l="__l" class="data-v-c3aecdbc" name="/static/u166.png" size="60" vueId="{{'8dd740cc-23'+','+'8dd740cc-22'}}"></u-icon>
+                    </view>
+                </u-cell-item>
+                <u-cell-item arrow="{{true}}" bind:__l="__l" bind:click="__e" borderBottom="{{true}}" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^click',[ ['goToManageClassPage'] ] ] ]}}" title="打卡代打" titleStyle="{{toolCardItemTitleStyle}}" vueId="{{'8dd740cc-24'+','+'8dd740cc-17'}}" vueSlots="{{['icon']}}" wx:if="{{userInfo.canManageClass}}">
+                    <view class="flex align-center data-v-c3aecdbc" slot="icon" style="padding-right:20rpx;">
+                        <u-icon bind:__l="__l" class="data-v-c3aecdbc" name="/static/u170.png" size="60" vueId="{{'8dd740cc-25'+','+'8dd740cc-24'}}"></u-icon>
+                    </view>
+                </u-cell-item>
+                <u-cell-item arrow="{{true}}" bind:__l="__l" bind:click="__e" borderBottom="{{true}}" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^click',[ ['goToHealthMgr'] ] ] ]}}" title="健康管理" titleStyle="{{toolCardItemTitleStyle}}" vueId="{{'8dd740cc-26'+','+'8dd740cc-17'}}" vueSlots="{{['icon']}}" wx:if="{{userInfo.canManageClass}}">
+                    <view class="flex align-center data-v-c3aecdbc" slot="icon" style="padding-right:20rpx;">
+                        <u-icon bind:__l="__l" class="data-v-c3aecdbc" name="/static/u53.png" size="60" vueId="{{'8dd740cc-27'+','+'8dd740cc-26'}}"></u-icon>
+                    </view>
+                </u-cell-item>
+                <u-cell-item arrow="{{true}}" bind:__l="__l" bind:click="__e" borderBottom="{{true}}" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^click',[ ['goToApprovalPage'] ] ] ]}}" title="审批管理" titleStyle="{{toolCardItemTitleStyle}}" vueId="{{'8dd740cc-28'+','+'8dd740cc-17'}}" vueSlots="{{['icon']}}" wx:if="{{userInfo.canManageClass}}">
+                    <view class="flex align-center data-v-c3aecdbc" slot="icon" style="padding-right:20rpx;">
+                        <u-icon bind:__l="__l" class="data-v-c3aecdbc" name="/static/u362.png" size="60" vueId="{{'8dd740cc-29'+','+'8dd740cc-28'}}"></u-icon>
+                    </view>
+                </u-cell-item>
+                <u-cell-item arrow="{{true}}" bind:__l="__l" bind:click="__e" borderBottom="{{true}}" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^click',[ ['goToCodeRulesPage'] ] ] ]}}" title="赋码规则" titleStyle="{{toolCardItemTitleStyle}}" vueId="{{'8dd740cc-30'+','+'8dd740cc-17'}}" vueSlots="{{['icon']}}">
+                    <view class="flex align-center data-v-c3aecdbc" slot="icon" style="padding-right:20rpx;">
+                        <u-icon bind:__l="__l" class="data-v-c3aecdbc" name="/static/u44.png" size="60" vueId="{{'8dd740cc-31'+','+'8dd740cc-30'}}"></u-icon>
+                    </view>
+                </u-cell-item>
+            </u-cell-group>
+            <u-cell-group bind:__l="__l" border="{{false}}" class="data-v-c3aecdbc" vueId="{{'8dd740cc-32'+','+'8dd740cc-16'}}" vueSlots="{{['default']}}" wx:if="{{isVisitor}}">
+                <u-cell-item arrow="{{true}}" bind:__l="__l" bind:click="__e" borderBottom="{{true}}" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^click',[ ['goToVisitorPage'] ] ] ]}}" title="访客预约" titleStyle="{{toolCardItemTitleStyle}}" vueId="{{'8dd740cc-33'+','+'8dd740cc-32'}}" vueSlots="{{['icon']}}">
+                    <view class="flex align-center data-v-c3aecdbc" slot="icon" style="padding-right:20rpx;">
+                        <u-icon bind:__l="__l" class="data-v-c3aecdbc" name="/static/u478.png" size="60" vueId="{{'8dd740cc-34'+','+'8dd740cc-33'}}"></u-icon>
+                    </view>
+                </u-cell-item>
+            </u-cell-group>
+        </view>
+    </u-card>
+    <u-popup bind:__l="__l" bind:input="__e" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','authorizeLoginShow','$event',[] ] ] ] ] ]}}" mode="bottom" value="{{authorizeLoginShow}}" vueId="8dd740cc-35" vueSlots="{{['default']}}">
+        <view class="flex justify-start flex-direction data-v-c3aecdbc" style="padding:30rpx;">
+            <view class="flex justify-start align-center data-v-c3aecdbc">
+                <u-icon bind:__l="__l" class="data-v-c3aecdbc" name="/static/u2.jpg" size="90" vueId="{{'8dd740cc-36'+','+'8dd740cc-35'}}"></u-icon>
+                <label class="pop_title _span data-v-c3aecdbc">欢迎来到福州大学</label>
+            </view>
+            <view class="pop-desc data-v-c3aecdbc">为提供便捷服务，福州大学一码通需要获取您的用户信息</view>
+            <view class="data-v-c3aecdbc">
+                <u-button bind:__l="__l" bind:getuserinfo="__e" class="bottom data-v-c3aecdbc" data-event-opts="{{[ [ '^getuserinfo',[ ['wxLogin'] ] ] ]}}" lang="zh_CN" openType="getUserInfo" type="success" vueId="{{'8dd740cc-37'+','+'8dd740cc-35'}}" vueSlots="{{['default']}}" withCredentials="true">确认微信授权</u-button>
+            </view>
+            <view class="flex justify-end data-v-c3aecdbc" style="margin:30rpx 0;">
+                <label bindtap="__e" class="_span data-v-c3aecdbc" data-event-opts="{{[ [ 'tap',[ [ 'e1',['$event'] ] ] ] ]}}" style="font-size:12px;text-decoration:underline;color:#797979;">暂不授权</label>
+            </view>
+        </view>
+    </u-popup>
+    <u-popup bind:__l="__l" bind:input="__e" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','registerMobileShow','$event',[] ] ] ] ] ]}}" mode="bottom" value="{{registerMobileShow}}" vueId="8dd740cc-38" vueSlots="{{['default']}}">
+        <view class="flex justify-start flex-direction data-v-c3aecdbc" style="padding:30rpx;">
+            <view class="flex justify-start align-center data-v-c3aecdbc">
+                <u-icon bind:__l="__l" class="data-v-c3aecdbc" name="/static/u2.jpg" size="90" vueId="{{'8dd740cc-39'+','+'8dd740cc-38'}}"></u-icon>
+                <label class="pop_title _span data-v-c3aecdbc">欢迎来到福州大学</label>
+            </view>
+            <view class="pop-desc data-v-c3aecdbc">为了关联注册信息，还需要您的手机号码</view>
+            <view class="data-v-c3aecdbc">
+                <u-button bind:__l="__l" bind:getphonenumber="__e" class="bottom data-v-c3aecdbc" data-event-opts="{{[ [ '^getphonenumber',[ ['getPhoneNum'] ] ] ]}}" lang="zh_CN" openType="getPhoneNumber" type="success" vueId="{{'8dd740cc-40'+','+'8dd740cc-38'}}" vueSlots="{{['default']}}" withCredentials="true">确认微信授权</u-button>
+            </view>
+            <view class="flex justify-end data-v-c3aecdbc" style="margin:30rpx 0;">
+                <label bindtap="__e" class="_span data-v-c3aecdbc" data-event-opts="{{[ [ 'tap',[ [ 'e2',['$event'] ] ] ] ]}}" style="font-size:12px;text-decoration:underline;color:#797979;">暂不授权</label>
+            </view>
+        </view>
+    </u-popup>
+    <u-modal bind:__l="__l" bind:input="__e" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','fudaLoginShow','$event',[] ] ] ] ] ]}}" showConfirmButton="{{false}}" title="福大账号登录" value="{{fudaLoginShow}}" vueId="8dd740cc-41" vueSlots="{{['default']}}">
+        <view class="data-v-c3aecdbc" style="padding:20rpx;">
+            <u-form bind:__l="__l" class="data-v-c3aecdbc vue-ref" data-ref="loginForm" model="{{fudaAccountForm}}" vueId="{{'8dd740cc-42'+','+'8dd740cc-41'}}" vueSlots="{{['default']}}">
+                <u-form-item bind:__l="__l" class="data-v-c3aecdbc" label="用户名" labelWidth="120" prop="username" vueId="{{'8dd740cc-43'+','+'8dd740cc-42'}}" vueSlots="{{['default']}}">
+                    <u-input bind:__l="__l" bind:input="__e" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','username','$event',[] ],['fudaAccountForm'] ] ] ] ]}}" placeholder="学号或是工号(需大写)" value="{{fudaAccountForm.username}}" vueId="{{'8dd740cc-44'+','+'8dd740cc-43'}}"></u-input>
+                </u-form-item>
+                <u-form-item bind:__l="__l" class="data-v-c3aecdbc" label="密码" labelStyle="{{letterSpacing:'27rpx'}}" labelWidth="120" prop="password" vueId="{{'8dd740cc-45'+','+'8dd740cc-42'}}" vueSlots="{{['default']}}">
+                    <u-input bind:__l="__l" bind:input="__e" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','password','$event',[] ],['fudaAccountForm'] ] ] ] ]}}" placeholder="统一身份密码" type="password" value="{{fudaAccountForm.password}}" vueId="{{'8dd740cc-46'+','+'8dd740cc-45'}}"></u-input>
+                </u-form-item>
+            </u-form>
+            <u-button bind:__l="__l" bind:click="__e" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^click',[ ['fudaAccountSubmitForm'] ] ] ]}}" style="margin-top:20rpx;" vueId="{{'8dd740cc-47'+','+'8dd740cc-41'}}" vueSlots="{{['default']}}">提交</u-button>
+            <view bindtap="__e" class="flex justify-end data-v-c3aecdbc" data-event-opts="{{[ [ 'tap',[ [ 'visitorClick',['$event'] ] ] ] ]}}" style="margin:20rpx;font-size:28rpx;color:#0e89e3;">访客入口</view>
+        </view>
+    </u-modal>
+    <u-modal bind:__l="__l" bind:input="__e" class="data-v-c3aecdbc" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','unchangedDailyHealthShow','$event',[] ] ] ] ] ]}}" maskCloseAble="{{false}}" showConfirmButton="{{false}}" showTitle="{{false}}" value="{{unchangedDailyHealthShow}}" vueId="8dd740cc-48" vueSlots="{{['default']}}">
+        <view class="data-v-c3aecdbc" style="padding:20rpx;">
+            <view class="unc_title flex justify-end align-center data-v-c3aecdbc">
+                <u-icon bind:__l="__l" bind:click="__e" class="data-v-c3aecdbc" color="#333333" data-event-opts="{{[ [ '^click',[ ['e3'] ] ] ]}}" name="close" size="32" vueId="{{'8dd740cc-49'+','+'8dd740cc-48'}}"></u-icon>
+            </view>
+            <view class="unc_body flex flex-direction data-v-c3aecdbc" style="padding:30rpx;">
+                <text class="flex justify-center data-v-c3aecdbc" style="color:#303030;font-size:40rpx;font-weight:700;padding:30rpx 0;">无变化打卡</text>
+                <text class="data-v-c3aecdbc" style="font-size:26rpx;color:#333333;">以上填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处。</text>
+                <view bindtap="__e" class="unc_button data-v-c3aecdbc" data-event-opts="{{[ [ 'tap',[ [ 'unchangedDailyHealthSubmit',['$event'] ] ] ] ]}}" style="margin-top:30rpx;">本人承诺并确认提交</view>
+            </view>
+        </view>
+    </u-modal>
+    <u-toast bind:__l="__l" class="data-v-c3aecdbc vue-ref" data-ref="uToast" position="top" vueId="8dd740cc-50"></u-toast>
+</view>

@@ -1,0 +1,6 @@
+<view class="u-cell-box data-v-556b7a8c">
+    <view class="u-cell-title data-v-556b7a8c" style="{{$root.s0}}" wx:if="{{title}}">{{''+title+''}}</view>
+    <view class="{{['u-cell-item-box','data-v-556b7a8c',border?'u-border-bottom u-border-top':'']}}" style="{{'background-color:'+bgColor+';'}}">
+        <slot></slot>
+    </view>
+</view>

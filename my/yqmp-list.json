@@ -1,0 +1,13 @@
+{
+    "navigationBarTitleText": "疫情摸排管理",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "u-sticky": "/uview-ui/components/u-sticky/u-sticky",
+        "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+        "u-line": "/uview-ui/components/u-line/u-line",
+        "u-empty": "/uview-ui/components/u-empty/u-empty",
+        "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore",
+        "u-gap": "/uview-ui/components/u-gap/u-gap",
+        "u-back-top": "/uview-ui/components/u-back-top/u-back-top"
+    }
+}

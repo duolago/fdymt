@@ -1,0 +1,7 @@
+<view bindtap="__e" class="{{['u-back-top','data-v-7ed9e1c3','u-back-top--mode--'+mode]}}" data-event-opts="{{[ [ 'tap',[ [ 'backToTop',['$event'] ] ] ] ]}}" style="{{$root.s0}}">
+    <view class="u-back-top__content data-v-7ed9e1c3" wx:if="{{!$slots.default&&!$slots[$default]}}">
+        <u-icon bind:__l="__l" bind:click="__e" class="data-v-7ed9e1c3" customStyle="{{iconStyle}}" data-event-opts="{{[ [ '^click',[ ['backToTop'] ] ] ]}}" name="{{icon}}" vueId="188b2066-1"></u-icon>
+        <view class="u-back-top__content__tips data-v-7ed9e1c3">{{''+tips+''}}</view>
+    </view>
+    <slot wx:else></slot>
+</view>

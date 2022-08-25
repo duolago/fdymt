@@ -1,0 +1,141 @@
+.text-cut-2.data-v-69243450 {
+    -webkit-line-clamp: 2;
+}
+
+.text-cut-1.data-v-69243450,.text-cut-2.data-v-69243450 {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.text-cut-1.data-v-69243450 {
+    -webkit-line-clamp: 1;
+}
+
+.flex.data-v-69243450 {
+    display: flex;
+}
+
+.basis-xs.data-v-69243450 {
+    flex-basis: 20%;
+}
+
+.basis-sm.data-v-69243450 {
+    flex-basis: 40%;
+}
+
+.basis-df.data-v-69243450 {
+    flex-basis: 50%;
+}
+
+.basis-lg.data-v-69243450 {
+    flex-basis: 60%;
+}
+
+.basis-xl.data-v-69243450 {
+    flex-basis: 80%;
+}
+
+.flex-sub.data-v-69243450 {
+    flex: 1;
+}
+
+.flex-twice.data-v-69243450 {
+    flex: 2;
+}
+
+.flex-treble.data-v-69243450 {
+    flex: 3;
+}
+
+.flex-direction.data-v-69243450 {
+    flex-direction: column;
+}
+
+.flex-wrap.data-v-69243450 {
+    flex-wrap: wrap;
+}
+
+.align-start.data-v-69243450 {
+    align-items: flex-start;
+}
+
+.align-end.data-v-69243450 {
+    align-items: flex-end;
+}
+
+.align-center.data-v-69243450 {
+    align-items: center;
+}
+
+.self-start.data-v-69243450 {
+    align-self: flex-start;
+}
+
+.self-center.data-v-69243450 {
+    align-self: flex-center;
+}
+
+.self-end.data-v-69243450 {
+    align-self: flex-end;
+}
+
+.self-stretch.data-v-69243450 {
+    align-self: stretch;
+}
+
+.align-stretch.data-v-69243450 {
+    align-items: stretch;
+}
+
+.justify-start.data-v-69243450 {
+    justify-content: flex-start;
+}
+
+.justify-end.data-v-69243450 {
+    justify-content: flex-end;
+}
+
+.justify-center.data-v-69243450 {
+    justify-content: center;
+}
+
+.justify-between.data-v-69243450 {
+    justify-content: space-between;
+}
+
+.justify-around.data-v-69243450 {
+    justify-content: space-around;
+}
+
+.container.data-v-69243450 {
+    position: relative;
+}
+
+.container .bg-icon.data-v-69243450 {
+    height: 160rpx;
+    opacity: .2;
+    position: absolute;
+    right: 10rpx;
+    top: 10rpx;
+    width: 160rpx;
+}
+
+.container .user-card.data-v-69243450 {
+    align-items: center;
+    background-color: #045489;
+    color: #fff;
+    display: flex;
+    height: 300rpx;
+    padding: 30rpx;
+}
+
+.container .user-card .username-block.data-v-69243450 {
+    font-size: 50rpx;
+    font-weight: 700;
+    height: 100%;
+    margin-left: 20rpx;
+    padding: 40rpx 0;
+}

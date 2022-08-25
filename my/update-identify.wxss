@@ -1,0 +1,54 @@
+.container {
+    background-color: #045489;
+    min-height: 100vh;
+    padding: 30rpx;
+}
+
+.user-info-container {
+    color: #fff;
+    font-size: 36rpx;
+    font-weight: 500;
+    padding: 40rpx;
+}
+
+.user-info-container ._p {
+    line-height: 66rpx;
+}
+
+.user-info-left {
+    width: calc(100% - 186rpx);
+}
+
+.user-info-right-icon {
+    opacity: .4;
+    width: 170rpx;
+}
+
+.pop_title {
+    color: #333;
+    font-size: 40rpx;
+    text-indent: 30rpx;
+}
+
+.pop-desc {
+    color: #333;
+    font-size: 30rpx;
+    margin: 50rpx 0;
+}
+
+.c_primary_btn {
+    background-color: #045489;
+    color: #fff;
+    font-size: 24rpx;
+}
+
+.c_primary_btn:active {
+    background-color: #03456f;
+}
+
+.timer {
+    color: #1d9347;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30rpx;
+}

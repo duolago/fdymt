@@ -1,0 +1,29 @@
+<view class="container data-v-015acff0" style="padding:20rpx;">
+    <view class="data-v-015acff0" style="margin-top:30rpx;">
+        <view class="data-v-015acff0" style="font-size:38rpx;width:100%;text-align:center;margin:20rpx 0;position:relative;">{{''+$root.g0+''}}<u-icon bind:__l="__l" bind:click="__e" class="data-v-015acff0" data-event-opts="{{[ [ '^click',[ ['getLocation'] ] ] ]}}" label="{{curLocation}}" labelPos="right" labelSize="30" marginLeft="14" name="map" size="{{32}}" style="position:absolute;left:0;top:10rpx;" vueId="7999cdb8-1"></u-icon>
+        </view>
+        <u-form bind:__l="__l" class="data-v-015acff0 vue-ref" data-ref="uForm" model="{{hForm}}" vueId="7999cdb8-2" vueSlots="{{['default']}}">
+            <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-015acff0" label="{{item.content}}" labelAlign="left" labelWidth="410" prop="{{'item'+index+'contentValue'}}" vueId="{{'7999cdb8-3-'+index+','+'7999cdb8-2'}}" vueSlots="{{['default']}}" wx:for="{{hForm.dailyRelationResps}}" wx:key="index">
+                <view class="flex justify-end data-v-015acff0" style="width:100%;">
+                    <u-radio-group activeColor="#52d1cc" bind:__l="__l" bind:change="__e" bind:input="__e" class="data-v-015acff0" data-event-opts="{{[ [ '^change',[ ['radioGroupChange'] ] ],[ '^input',[ [ '__set_model',[ '$0','contentValue','$event',[] ],[ [ ['hForm.dailyRelationResps','',index] ] ] ] ] ] ]}}" disabled="{{isDis}}" value="{{item.contentValue}}" vueId="{{'7999cdb8-4-'+index+','+'7999cdb8-3-'+index}}" vueSlots="{{['default']}}" width="124rpx">
+                        <u-radio activeColor="#ce1729" bind:__l="__l" class="data-v-015acff0" name="{{1}}" vueId="{{'7999cdb8-5-'+index+','+'7999cdb8-4-'+index}}" vueSlots="{{['default']}}">是</u-radio>
+                        <u-radio bind:__l="__l" class="data-v-015acff0" name="{{0}}" vueId="{{'7999cdb8-6-'+index+','+'7999cdb8-4-'+index}}" vueSlots="{{['default']}}">否</u-radio>
+                    </u-radio-group>
+                </view>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-015acff0" label="其它情况" labelPosition="top" labelWidth="400" prop="remark" vueId="{{'7999cdb8-7'+','+'7999cdb8-2'}}" vueSlots="{{['default']}}">
+                <u-input bind:__l="__l" bind:input="__e" class="data-v-015acff0" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','remark','$event',[] ],['hForm'] ] ] ] ]}}" disabled="{{isDis}}" placeholder="如有特殊情况,请填写在此处" type="textarea" value="{{hForm.remark}}" vueId="{{'7999cdb8-8'+','+'7999cdb8-7'}}"></u-input>
+            </u-form-item>
+            <u-form-item bind:__l="__l" class="data-v-015acff0" label="{{operaName+'审批'}}" labelWidth="200" prop="remark" required="{{true}}" vueId="{{'7999cdb8-9'+','+'7999cdb8-2'}}" vueSlots="{{['default']}}" wx:if="{{exceptionAttrCount>0}}">
+                <u-radio-group bind:__l="__l" bind:input="__e" class="data-v-015acff0" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','auditUserId','$event',[] ] ] ] ] ]}}" value="{{auditUserId}}" vueId="{{'7999cdb8-10'+','+'7999cdb8-9'}}" vueSlots="{{['default']}}">
+                    <u-radio activeColor="#52d1cc" bind:__l="__l" class="data-v-015acff0" name="{{item.id}}" vueId="{{'7999cdb8-11-'+index+','+'7999cdb8-10'}}" vueSlots="{{['default']}}" wx:for="{{auditUserList}}" wx:key="index">{{''+item.username+''}}</u-radio>
+                </u-radio-group>
+            </u-form-item>
+        </u-form>
+    </view>
+    <u-gap bind:__l="__l" class="data-v-015acff0" height="280" vueId="7999cdb8-12"></u-gap>
+    <view class="fixed-bottom-area data-v-015acff0">
+        <view bindtap="__e" class="{{[ 'data-v-015acff0','custom-p-button',[isDis?'disabled-btn':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'submitForm',['$event'] ] ] ] ]}}">提交</view>
+    </view>
+    <u-toast bind:__l="__l" class="data-v-015acff0 vue-ref" data-ref="uToast" position="top" vueId="7999cdb8-13"></u-toast>
+</view>

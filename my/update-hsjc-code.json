@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "核酸检测",
+    "usingComponents": {
+        "u-card": "/uview-ui/components/u-card/u-card",
+        "u-form": "/uview-ui/components/u-form/u-form",
+        "u-form-item": "/uview-ui/components/u-form-item/u-form-item",
+        "u-toast": "/uview-ui/components/u-toast/u-toast",
+        "lpp-upload": "/components/lpp-upload/index"
+    }
+}

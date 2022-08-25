@@ -1,0 +1,13 @@
+{
+    "navigationBarTitleText": "人员列表",
+    "usingComponents": {
+        "u-icon": "/uview-ui/components/u-icon/u-icon",
+        "u-search": "/uview-ui/components/u-search/u-search",
+        "u-gap": "/uview-ui/components/u-gap/u-gap",
+        "u-divider": "/uview-ui/components/u-divider/u-divider",
+        "u-image": "/uview-ui/components/u-image/u-image",
+        "u-loading": "/uview-ui/components/u-loading/u-loading",
+        "u-popup": "/uview-ui/components/u-popup/u-popup",
+        "u-toast": "/uview-ui/components/u-toast/u-toast"
+    }
+}

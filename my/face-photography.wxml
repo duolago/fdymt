@@ -1,0 +1,16 @@
+<view class="flex justify-start align-center flex-direction container data-v-617368a7">
+    <view class="flex align-center flex-direction data-v-617368a7" wx:if="{{!src}}">
+        <camera :binderror="{{handleCameraError}}" binderror="__e" class="data-v-617368a7" data-event-opts="{{[ [ 'error',[ [ 'error',['$event'] ] ] ] ]}}" devicePosition="{{devicePosition}}" flash="off" style="width:86vw;height:calc(86vw * 1.333333);"></camera>
+        <view class="flex justify-around data-v-617368a7" style="margin-top:100rpx;width:100%;">
+            <u-icon bind:__l="__l" bind:click="__e" class="data-v-617368a7" color="#c7c3c3" data-event-opts="{{[ [ '^click',[ ['changeDevicePosition'] ] ] ]}}" name="reload" size="60" vueId="b2bc1ec2-1"></u-icon>
+            <u-icon bind:__l="__l" bind:click="__e" class="data-v-617368a7" color="#c7c3c3" data-event-opts="{{[ [ '^click',[ ['takePhoto'] ] ] ]}}" name="camera" size="60" vueId="b2bc1ec2-2"></u-icon>
+        </view>
+    </view>
+    <view class="flex align-center flex-direction data-v-617368a7" style="width:90%;" wx:if="{{src}}">
+        <image class="data-v-617368a7" mode="scaleToFill" src="{{src}}" style="width:86vw;height:calc(86vw * 1.333333);"></image>
+        <view class="flex justify-around data-v-617368a7" style="margin-top:100rpx;width:100%;">
+            <u-icon bind:__l="__l" bind:click="__e" class="data-v-617368a7" color="#c7c3c3" data-event-opts="{{[ [ '^click',[ [ 'confirmPhoto',[false] ] ] ] ]}}" name="close" size="60" vueId="b2bc1ec2-3"></u-icon>
+            <u-icon bind:__l="__l" bind:click="__e" class="data-v-617368a7" color="#c7c3c3" data-event-opts="{{[ [ '^click',[ [ 'confirmPhoto',[true] ] ] ] ]}}" name="checkmark" size="60" vueId="b2bc1ec2-4"></u-icon>
+        </view>
+    </view>
+</view>

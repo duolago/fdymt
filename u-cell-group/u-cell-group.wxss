@@ -1,0 +1,126 @@
+.text-cut-2.data-v-556b7a8c {
+    -webkit-line-clamp: 2;
+}
+
+.text-cut-1.data-v-556b7a8c,.text-cut-2.data-v-556b7a8c {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.text-cut-1.data-v-556b7a8c {
+    -webkit-line-clamp: 1;
+}
+
+.flex.data-v-556b7a8c {
+    display: flex;
+}
+
+.basis-xs.data-v-556b7a8c {
+    flex-basis: 20%;
+}
+
+.basis-sm.data-v-556b7a8c {
+    flex-basis: 40%;
+}
+
+.basis-df.data-v-556b7a8c {
+    flex-basis: 50%;
+}
+
+.basis-lg.data-v-556b7a8c {
+    flex-basis: 60%;
+}
+
+.basis-xl.data-v-556b7a8c {
+    flex-basis: 80%;
+}
+
+.flex-sub.data-v-556b7a8c {
+    flex: 1;
+}
+
+.flex-twice.data-v-556b7a8c {
+    flex: 2;
+}
+
+.flex-treble.data-v-556b7a8c {
+    flex: 3;
+}
+
+.flex-direction.data-v-556b7a8c {
+    flex-direction: column;
+}
+
+.flex-wrap.data-v-556b7a8c {
+    flex-wrap: wrap;
+}
+
+.align-start.data-v-556b7a8c {
+    align-items: flex-start;
+}
+
+.align-end.data-v-556b7a8c {
+    align-items: flex-end;
+}
+
+.align-center.data-v-556b7a8c {
+    align-items: center;
+}
+
+.self-start.data-v-556b7a8c {
+    align-self: flex-start;
+}
+
+.self-center.data-v-556b7a8c {
+    align-self: flex-center;
+}
+
+.self-end.data-v-556b7a8c {
+    align-self: flex-end;
+}
+
+.self-stretch.data-v-556b7a8c {
+    align-self: stretch;
+}
+
+.align-stretch.data-v-556b7a8c {
+    align-items: stretch;
+}
+
+.justify-start.data-v-556b7a8c {
+    justify-content: flex-start;
+}
+
+.justify-end.data-v-556b7a8c {
+    justify-content: flex-end;
+}
+
+.justify-center.data-v-556b7a8c {
+    justify-content: center;
+}
+
+.justify-between.data-v-556b7a8c {
+    justify-content: space-between;
+}
+
+.justify-around.data-v-556b7a8c {
+    justify-content: space-around;
+}
+
+.u-cell-box.data-v-556b7a8c {
+    width: 100%;
+}
+
+.u-cell-title.data-v-556b7a8c {
+    color: #909399;
+    font-size: 30rpx;
+    padding: 30rpx 32rpx 10rpx;
+    text-align: left;
+}
+
+.u-cell-item-box.data-v-556b7a8c {
+    flex-direction: row;
+}

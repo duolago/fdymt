@@ -1,0 +1,7 @@
+<view class="container data-v-6c0834b8" style="padding:20rpx;">
+    <view class="flex justify-center data-v-6c0834b8" style="padding:30rpx;font-size:40rpx;color:#000000;">{{''+(msgObj.title||'最新消息')+''}}</view>
+    <view class="flex justify-start data-v-6c0834b8" style="margin-top:20rpx;">{{''+$root.g0+''}}</view>
+    <view class="data-v-6c0834b8" style="margin-top:30rpx;">
+        <u-parse bind:__l="__l" class="data-v-6c0834b8" html="{{msgObj.summary}}" vueId="0e7159a2-1"></u-parse>
+    </view>
+</view>

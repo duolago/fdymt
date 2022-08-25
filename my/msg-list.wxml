@@ -1,0 +1,43 @@
+<view class="container data-v-290b418b">
+    <u-gap bgColor="#F2F2F2" bind:__l="__l" class="data-v-290b418b" height="14" vueId="981fd0fc-1"></u-gap>
+    <view class="flex justify-between data-v-290b418b" style="font-size:26rpx;color:#797979;padding:20rpx 30rpx 0;">
+        <view bindtap="__e" class="flex align-center data-v-290b418b" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}">
+            <view class="flex align-center data-v-290b418b" slot="icon" style="padding-right:10rpx;padding-top:5rpx;position:relative;">
+                <u-icon bind:__l="__l" class="data-v-290b418b" name="/static/u58.png" size="40" vueId="981fd0fc-2"></u-icon>
+                <u-badge absolute="{{true}}" bind:__l="__l" class="data-v-290b418b" count="{{unread}}" offset="{{[-8,0]}}" type="error" vueId="981fd0fc-3" wx:if="{{unread!==0}}"></u-badge>
+            </view>{{''+$root.m0+''}}<view class="data-v-290b418b" style="padding-left:10rpx;padding-top:5rpx;">
+                <u-icon bind:__l="__l" class="data-v-290b418b" name="arrow-right-double" size="30" vueId="981fd0fc-4"></u-icon>
+            </view>
+        </view>
+        <view bindtap="__e" class="data-v-290b418b" data-event-opts="{{[ [ 'tap',[ [ 'maskAllRead',['$event'] ] ] ] ]}}">全部已读</view>
+    </view>
+    <u-card bind:__l="__l" boxShadow="0rpx 4rpx 10rpx rgba(0, 0, 0, 12%)" class="data-v-290b418b" padding="0" showHead="{{false}}" showFoot="{{false}}" vueId="{{'981fd0fc-5-'+index}}" vueSlots="{{['body']}}" wx:for="{{$root.l0}}" wx:key="index">
+        <view bindtap="__e" class="flex flex-direction data-v-290b418b" data-event-opts="{{[ [ 'tap',[ [ 'goToMsgDetailPage',[index,'$0'],[ [ ['msgList','',index] ] ] ] ] ] ]}}" slot="body" style="padding:20rpx;">
+            <view class="flex justify-end data-v-290b418b">
+                <text class="data-v-290b418b" style="{{'color:'+(item[$orig].read?'#797979':'red')+';'}}">{{''+(item[$orig].read?'已读':'未读')+''}}</text>
+            </view>
+            <view class="text-cut-1 data-v-290b418b" style="font-size:36rpx;color:#000000;">{{''+(item[$orig].title||'最新消息')+''}}</view>
+            <view class="flex justify-between data-v-290b418b" style="margin-top:20rpx;">
+                <view class="data-v-290b418b">
+                    <text class="data-v-290b418b">{{item.g0}}</text>
+                    <text class="data-v-290b418b" style="margin-left:20rpx;color:#a09d9d;">点击查看</text>
+                </view>
+                <u-icon bind:__l="__l" class="data-v-290b418b" color="#a09d9d" name="arrow-right" size="22" vueId="{{'981fd0fc-6-'+index+','+'981fd0fc-5-'+index}}"></u-icon>
+            </view>
+        </view>
+    </u-card>
+    <u-toast bind:__l="__l" class="data-v-290b418b vue-ref" data-ref="uToast" position="top" vueId="981fd0fc-7"></u-toast>
+    <u-popup bind:__l="__l" bind:input="__e" class="data-v-290b418b" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','showMsgType','$event',[] ] ] ] ] ]}}" mode="left" value="{{showMsgType}}" vueId="981fd0fc-8" vueSlots="{{['default']}}">
+        <view class="flex justify-end data-v-290b418b">
+            <view bindtap="__e" class="data-v-290b418b" data-event-opts="{{[ [ 'tap',[ [ 'e1',['$event'] ] ] ] ]}}" style="padding:10rpx;">
+                <u-icon bind:__l="__l" class="data-v-290b418b" name="close" size="40" vueId="{{'981fd0fc-9'+','+'981fd0fc-8'}}"></u-icon>
+            </view>
+        </view>
+        <view class="u-tab-view data-v-290b418b">
+            <view bindtap="__e" class="{{[ 'u-tab-item','flex','data-v-290b418b',[1?'flex':'',sideTabVal===item.value?'u-tab-item-active':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'swichType',[index,'$0'],[ [ ['msgTypeArr','',index] ] ] ] ] ] ]}}" wx:for="{{msgTypeArr}}" wx:key="index">
+                <u-icon bind:__l="__l" class="data-v-290b418b" name="{{item.icon}}" size="35" vueId="{{'981fd0fc-10-'+index+','+'981fd0fc-8'}}"></u-icon>
+                <text class="u-line-1 data-v-290b418b" style="margin-left:10rpx;">{{item.label}}</text>
+            </view>
+        </view>
+    </u-popup>
+</view>

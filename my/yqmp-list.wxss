@@ -1,0 +1,123 @@
+.text-cut-2.data-v-e4a5b406 {
+    -webkit-line-clamp: 2;
+}
+
+.text-cut-1.data-v-e4a5b406,.text-cut-2.data-v-e4a5b406 {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.text-cut-1.data-v-e4a5b406 {
+    -webkit-line-clamp: 1;
+}
+
+.flex.data-v-e4a5b406 {
+    display: flex;
+}
+
+.basis-xs.data-v-e4a5b406 {
+    flex-basis: 20%;
+}
+
+.basis-sm.data-v-e4a5b406 {
+    flex-basis: 40%;
+}
+
+.basis-df.data-v-e4a5b406 {
+    flex-basis: 50%;
+}
+
+.basis-lg.data-v-e4a5b406 {
+    flex-basis: 60%;
+}
+
+.basis-xl.data-v-e4a5b406 {
+    flex-basis: 80%;
+}
+
+.flex-sub.data-v-e4a5b406 {
+    flex: 1;
+}
+
+.flex-twice.data-v-e4a5b406 {
+    flex: 2;
+}
+
+.flex-treble.data-v-e4a5b406 {
+    flex: 3;
+}
+
+.flex-direction.data-v-e4a5b406 {
+    flex-direction: column;
+}
+
+.flex-wrap.data-v-e4a5b406 {
+    flex-wrap: wrap;
+}
+
+.align-start.data-v-e4a5b406 {
+    align-items: flex-start;
+}
+
+.align-end.data-v-e4a5b406 {
+    align-items: flex-end;
+}
+
+.align-center.data-v-e4a5b406 {
+    align-items: center;
+}
+
+.self-start.data-v-e4a5b406 {
+    align-self: flex-start;
+}
+
+.self-center.data-v-e4a5b406 {
+    align-self: flex-center;
+}
+
+.self-end.data-v-e4a5b406 {
+    align-self: flex-end;
+}
+
+.self-stretch.data-v-e4a5b406 {
+    align-self: stretch;
+}
+
+.align-stretch.data-v-e4a5b406 {
+    align-items: stretch;
+}
+
+.justify-start.data-v-e4a5b406 {
+    justify-content: flex-start;
+}
+
+.justify-end.data-v-e4a5b406 {
+    justify-content: flex-end;
+}
+
+.justify-center.data-v-e4a5b406 {
+    justify-content: center;
+}
+
+.justify-between.data-v-e4a5b406 {
+    justify-content: space-between;
+}
+
+.justify-around.data-v-e4a5b406 {
+    justify-content: space-around;
+}
+
+.fixed-circle-container.data-v-e4a5b406 {
+    background-color: #52d1cc;
+    border-radius: 40rpx;
+    bottom: 300rpx;
+    position: fixed;
+    right: 40rpx;
+}
+
+.fixed-circle-container.data-v-e4a5b406:active {
+    background-color: #47b6b1;
+}

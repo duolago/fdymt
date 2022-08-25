@@ -1,0 +1,174 @@
+.text-cut-2.data-v-10be605a {
+    -webkit-line-clamp: 2;
+}
+
+.text-cut-1.data-v-10be605a,.text-cut-2.data-v-10be605a {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.text-cut-1.data-v-10be605a {
+    -webkit-line-clamp: 1;
+}
+
+.flex.data-v-10be605a {
+    display: flex;
+}
+
+.basis-xs.data-v-10be605a {
+    flex-basis: 20%;
+}
+
+.basis-sm.data-v-10be605a {
+    flex-basis: 40%;
+}
+
+.basis-df.data-v-10be605a {
+    flex-basis: 50%;
+}
+
+.basis-lg.data-v-10be605a {
+    flex-basis: 60%;
+}
+
+.basis-xl.data-v-10be605a {
+    flex-basis: 80%;
+}
+
+.flex-sub.data-v-10be605a {
+    flex: 1;
+}
+
+.flex-twice.data-v-10be605a {
+    flex: 2;
+}
+
+.flex-treble.data-v-10be605a {
+    flex: 3;
+}
+
+.flex-direction.data-v-10be605a {
+    flex-direction: column;
+}
+
+.flex-wrap.data-v-10be605a {
+    flex-wrap: wrap;
+}
+
+.align-start.data-v-10be605a {
+    align-items: flex-start;
+}
+
+.align-end.data-v-10be605a {
+    align-items: flex-end;
+}
+
+.align-center.data-v-10be605a {
+    align-items: center;
+}
+
+.self-start.data-v-10be605a {
+    align-self: flex-start;
+}
+
+.self-center.data-v-10be605a {
+    align-self: flex-center;
+}
+
+.self-end.data-v-10be605a {
+    align-self: flex-end;
+}
+
+.self-stretch.data-v-10be605a {
+    align-self: stretch;
+}
+
+.align-stretch.data-v-10be605a {
+    align-items: stretch;
+}
+
+.justify-start.data-v-10be605a {
+    justify-content: flex-start;
+}
+
+.justify-end.data-v-10be605a {
+    justify-content: flex-end;
+}
+
+.justify-center.data-v-10be605a {
+    justify-content: center;
+}
+
+.justify-between.data-v-10be605a {
+    justify-content: space-between;
+}
+
+.justify-around.data-v-10be605a {
+    justify-content: space-around;
+}
+
+.sub-area.data-v-10be605a {
+    padding: 0 30rpx;
+}
+
+.sub-area-title.data-v-10be605a {
+    background-color: #ececec;
+    color: #6a6a6b;
+    font-size: 32rpx;
+    padding: 20rpx;
+}
+
+.data-v-10be605a .uni-date-editor--x .uni-date__icon-clear {
+    top: -3px;
+}
+
+.fixed-bottom-area.data-v-10be605a {
+    background-color: #fff;
+    border-top: 1px solid #e2e2e2;
+    bottom: 0;
+    color: #333;
+    display: flex;
+    font-size: 26rpx;
+    padding: 20rpx 40rpx 40rpx;
+    position: fixed;
+    z-index: 10;
+}
+
+.fixed-bottom-area .custom-p-button.data-v-10be605a {
+    background: inherit;
+    background-color: #eee;
+    border: none;
+    border-radius: 100rpx;
+    box-shadow: none;
+    color: #999;
+    font-size: 36rpx;
+    height: 92rpx;
+    line-height: 92rpx;
+    margin-top: 30rpx;
+    text-align: center;
+    width: 306rpx;
+}
+
+.fixed-bottom-area .custom-p-button-right.data-v-10be605a {
+    background-color: #52d1cc;
+    color: #fff;
+    margin-left: 50rpx;
+}
+
+.fixed-bottom-area .custom-p-button-cancel.data-v-10be605a {
+    background-color: #52d1cc;
+    color: #fff;
+    width: 662rpx;
+}
+
+.fixed-bottom-area .disabled-btn.data-v-10be605a {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.fixed-bottom-area .custom-p-button.data-v-10be605a:active {
+    background-color: #47b6b1;
+}

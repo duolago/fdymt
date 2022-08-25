@@ -1,0 +1,139 @@
+.text-cut-2.data-v-290b418b {
+    -webkit-line-clamp: 2;
+}
+
+.text-cut-1.data-v-290b418b,.text-cut-2.data-v-290b418b {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.text-cut-1.data-v-290b418b {
+    -webkit-line-clamp: 1;
+}
+
+.flex.data-v-290b418b {
+    display: flex;
+}
+
+.basis-xs.data-v-290b418b {
+    flex-basis: 20%;
+}
+
+.basis-sm.data-v-290b418b {
+    flex-basis: 40%;
+}
+
+.basis-df.data-v-290b418b {
+    flex-basis: 50%;
+}
+
+.basis-lg.data-v-290b418b {
+    flex-basis: 60%;
+}
+
+.basis-xl.data-v-290b418b {
+    flex-basis: 80%;
+}
+
+.flex-sub.data-v-290b418b {
+    flex: 1;
+}
+
+.flex-twice.data-v-290b418b {
+    flex: 2;
+}
+
+.flex-treble.data-v-290b418b {
+    flex: 3;
+}
+
+.flex-direction.data-v-290b418b {
+    flex-direction: column;
+}
+
+.flex-wrap.data-v-290b418b {
+    flex-wrap: wrap;
+}
+
+.align-start.data-v-290b418b {
+    align-items: flex-start;
+}
+
+.align-end.data-v-290b418b {
+    align-items: flex-end;
+}
+
+.align-center.data-v-290b418b {
+    align-items: center;
+}
+
+.self-start.data-v-290b418b {
+    align-self: flex-start;
+}
+
+.self-center.data-v-290b418b {
+    align-self: flex-center;
+}
+
+.self-end.data-v-290b418b {
+    align-self: flex-end;
+}
+
+.self-stretch.data-v-290b418b {
+    align-self: stretch;
+}
+
+.align-stretch.data-v-290b418b {
+    align-items: stretch;
+}
+
+.justify-start.data-v-290b418b {
+    justify-content: flex-start;
+}
+
+.justify-end.data-v-290b418b {
+    justify-content: flex-end;
+}
+
+.justify-center.data-v-290b418b {
+    justify-content: center;
+}
+
+.justify-between.data-v-290b418b {
+    justify-content: space-between;
+}
+
+.justify-around.data-v-290b418b {
+    justify-content: space-around;
+}
+
+.container .u-tab-view.data-v-290b418b {
+    background: #f6f6f6;
+    height: 100%;
+    width: 200rpx;
+}
+
+.container .u-tab-item.data-v-290b418b {
+    align-items: center;
+    background: #f6f6f6;
+    box-sizing: border-box;
+    color: #444;
+    display: flex;
+    font-size: 24rpx;
+    font-weight: 400;
+    height: 84rpx;
+    justify-content: center;
+    line-height: 1;
+    padding: 0 14rpx;
+}
+
+.container .u-tab-item-active.data-v-290b418b {
+    background: #fff;
+    color: #858383;
+    font-size: 24rpx;
+    font-weight: 700;
+    position: relative;
+}

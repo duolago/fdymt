@@ -1,0 +1,15 @@
+.container {
+    background-color: #045489;
+    min-height: 100vh;
+    padding: 30rpx;
+}
+
+.c_primary_btn {
+    background-color: #045489;
+    color: #fff;
+    font-size: 24rpx;
+}
+
+.c_primary_btn:active {
+    background-color: #03456f;
+}

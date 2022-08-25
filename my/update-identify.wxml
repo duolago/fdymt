@@ -1,0 +1,33 @@
+<view class="container">
+    <view class="flex justify-between user-info-container">
+        <view class="flex flex-direction user-info-left">
+            <view class="text-cut-2 _p">姓<label class="_span" style="opacity:0;">占</label>{{'名：'+userInfo.name}}</view>
+            <view class="text-cut-2 _p">部<label class="_span" style="opacity:0;">位</label>{{'门：'+userInfo._class}}</view>
+            <view class="text-cut-2 _p">{{'用户名：'+userInfo.addrCode}}</view>
+        </view>
+        <view class="user-info-right-icon">
+            <u-icon bind:__l="__l" name="https://mh5.lppstore.com/v2/u1.jpg" size="168" vueId="46439240-1"></u-icon>
+        </view>
+    </view>
+    <u-card bind:__l="__l" margin="40rpx 30rpx" showHead="{{false}}" showFoot="{{false}}" vueId="46439240-2" vueSlots="{{['body']}}">
+        <view class="binding-card-content" slot="body">
+            <u-form bind:__l="__l" class="vue-ref" data-ref="uForm" model="{{form}}" vueId="{{'46439240-3'+','+'46439240-2'}}" vueSlots="{{['default']}}">
+                <u-form-item bind:__l="__l" label=" " labelPosition="top" labelWidth="120" prop="faceImage" vueId="{{'46439240-4'+','+'46439240-3'}}" vueSlots="{{['default']}}">
+                    <view class="flex justify-center">
+                        <lpp-upload bind:__l="__l" bind:input="__e" bind:takePhoto="__e" customTakePhoto="{{true}}" data-event-opts="{{[ [ '^takePhoto',[ ['goToTakePhoto'] ] ],[ '^input',[ [ '__set_model',[ '$0','faceImage','$event',[] ],['form'] ] ] ] ]}}" height="{{100}}" imageType="1" uploadProvider="{{1}}" uploadText="上传人脸照片" value="{{form.faceImage}}" vueId="{{'46439240-5'+','+'46439240-4'}}" width="{{100}}"></lpp-upload>
+                    </view>
+                </u-form-item>
+                <u-form-item bind:__l="__l" label="姓名" labelWidth="120" labelStyle="{{letterSpacing:'27rpx'}}" prop="name" vueId="{{'46439240-6'+','+'46439240-3'}}" vueSlots="{{['default']}}">
+                    <u-input bind:__l="__l" bind:input="__e" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','name','$event',[] ],['form'] ] ] ] ]}}" disabled="{{true}}" placeholder="请输入姓名" value="{{form.name}}" vueId="{{'46439240-7'+','+'46439240-6'}}"></u-input>
+                </u-form-item>
+                <u-form-item bind:__l="__l" label="用户名" labelWidth="120" prop="addrCode" vueId="{{'46439240-8'+','+'46439240-3'}}" vueSlots="{{['default']}}">
+                    <u-input bind:__l="__l" bind:input="__e" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','addrCode','$event',[] ],['form'] ] ] ] ]}}" disabled="{{true}}" placeholder="请输入用户名" value="{{form.addrCode}}" vueId="{{'46439240-9'+','+'46439240-8'}}"></u-input>
+                </u-form-item>
+                <view style="margin-top:20rpx;">
+                    <button bindtap="__e" class="c_primary_btn" data-event-opts="{{[ [ 'tap',[ [ 'submitForm',['$event'] ] ] ] ]}}" style="font-size:30rpx;">提交</button>
+                </view>
+            </u-form>
+        </view>
+    </u-card>
+    <u-toast bind:__l="__l" class="vue-ref" data-ref="uToast" position="top" vueId="46439240-10"></u-toast>
+</view>

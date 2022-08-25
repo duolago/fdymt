@@ -1,0 +1,71 @@
+<view class="container lpp-gray-bg data-v-10be605a">
+    <u-form bind:__l="__l" class="data-v-10be605a vue-ref" data-ref="form" model="{{form}}" vueId="32f965be-1" vueSlots="{{['default']}}">
+        <view bindtap="__e" class="sub-area-title data-v-10be605a" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}">
+            <text class="data-v-10be605a" style="margin-right:20rpx;">基本信息(点击展开详情)</text>
+            <u-icon bind:__l="__l" class="data-v-10be605a" name="{{showBaseInfo?'arrow-up':'arrow-down'}}" size="{{24}}" vueId="{{'32f965be-2'+','+'32f965be-1'}}"></u-icon>
+        </view>
+        <view class="sub-area data-v-10be605a">
+            <block wx:for="{{$root.l0}}" wx:key="index">
+                <u-form-item bind:__l="__l" class="data-v-10be605a" label="{{item[$orig].label+'：'}}" labelStyle="{{grayColorStyle}}" labelWidth="350" vueId="{{'32f965be-3-'+index+','+'32f965be-1'}}" vueSlots="{{['default']}}" wx:if="{{item[$orig].value&&index<2}}">
+                    <text class="data-v-10be605a" style="{{item.s0}}">{{item[$orig].value}}</text>
+                </u-form-item>
+                <block wx:else>
+                    <u-form-item bind:__l="__l" class="data-v-10be605a" data-custom-hidden="{{!showBaseInfo}}" label="{{item[$orig].label+'：'}}" labelStyle="{{item[$orig].isEdit&&!onlyShow?{color:''}:grayColorStyle}}" labelWidth="350" vueId="{{'32f965be-4-'+index+','+'32f965be-1'}}" vueSlots="{{['default']}}" wx:if="{{item[$orig].value&&index>=2}}">
+                        <u-input bind:__l="__l" bind:click="__e" class="data-v-10be605a" data-event-opts="{{[ [ '^click',[ [ 'showTime',[item[$orig].show==='end',index] ] ] ] ]}}" placeholder="请选择开始时间" selectOpen="{{item[$orig].show==='end'?showEndTime:showStartTime}}" type="select" value="{{item[$orig].value}}" vueId="{{'32f965be-5-'+index+','+'32f965be-4-'+index}}" wx:if="{{item[$orig].iptType==='dateTime'&&!onlyShow}}"></u-input>
+                        <block wx:else>
+                            <lpp-upload bind:__l="__l" class="data-v-10be605a" height="{{50}}" onlyShow="{{true}}" value="{{item[$orig].value}}" vueId="{{'32f965be-6-'+index+','+'32f965be-4-'+index}}" width="{{50}}" wx:if="{{item[$orig].iptType==='img'}}"></lpp-upload>
+                            <block wx:else>
+                                <multi-img-upload bind:__l="__l" class="data-v-10be605a" isDel="{{false}}" maxCount="{{3}}" uploadStyle="{{width:'140rpx',height:'140rpx',margin:'8rpx'}}" value="{{item[$orig].value}}" vueId="{{'32f965be-7-'+index+','+'32f965be-4-'+index}}" wx:if="{{item[$orig].iptType==='multiImg'&&item[$orig].value.length>0}}"></multi-img-upload>
+                                <text class="data-v-10be605a" style="{{'color:'+(item[$orig].color||'#aeb2b9')+';'}}" wx:else>{{item[$orig].value}}</text>
+                            </block>
+                        </block>
+                    </u-form-item>
+                </block>
+            </block>
+        </view>
+        <view class="sub-area-title data-v-10be605a" wx:if="{{auditRecords.records&&auditRecords.records.length>0}}">审批信息</view>
+        <view class="sub-area data-v-10be605a">
+            <block wx:for="{{$root.l1}}" wx:key="id">
+                <view class="data-v-10be605a" wx:if="{{item[$orig].status!==1&&item[$orig].status!==0&&item[$orig].status!==4}}">
+                    <u-form-item bind:__l="__l" borderBottom="{{false}}" class="data-v-10be605a" label="{{item[$orig].nodeName}}" labelStyle="{{grayColorStyle}}" labelWidth="160" vueId="{{'32f965be-8-'+index+','+'32f965be-1'}}" vueSlots="{{['default']}}">
+                        <text class="data-v-10be605a" style="{{item.s1}}">{{item[$orig].operatorName+(item[$orig].status===2?'通过':'拒绝')+'审批'}}</text>
+                    </u-form-item>
+                    <u-form-item bind:__l="__l" borderBottom="{{false}}" class="data-v-10be605a" label="审批时间" labelStyle="{{grayColorStyle}}" labelWidth="160" vueId="{{'32f965be-9-'+index+','+'32f965be-1'}}" vueSlots="{{['default']}}">
+                        <text class="data-v-10be605a" style="{{item.s2}}">{{item.g0}}</text>
+                    </u-form-item>
+                    <u-form-item bind:__l="__l" class="data-v-10be605a" label="审批意见" labelStyle="{{grayColorStyle}}" labelWidth="160" vueId="{{'32f965be-10-'+index+','+'32f965be-1'}}" vueSlots="{{['default']}}">
+                        <text class="data-v-10be605a" style="{{item.s3}}">{{item[$orig].memo}}</text>
+                    </u-form-item>
+                </view>
+                <view class="data-v-10be605a" wx:if="{{item[$orig].status===4&&!onlyShow}}">
+                    <u-form-item bind:__l="__l" class="data-v-10be605a" label="审批" labelStyle="{{grayColorStyle}}" labelWidth="160" vueId="{{'32f965be-11-'+index+','+'32f965be-1'}}" vueSlots="{{['default']}}">
+                        <text class="data-v-10be605a" style="{{item.s4}}">发起人已取消申请</text>
+                    </u-form-item>
+                </view>
+                <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-10be605a" label="审批意见" labelAlign="left" labelWidth="260" vueId="{{'32f965be-12-'+index+','+'32f965be-1'}}" vueSlots="{{['default']}}" wx:if="{{item[$orig].status===1&&!onlyShow}}">
+                    <u-input bind:__l="__l" bind:input="__e" class="data-v-10be605a" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','opinion','$event',[] ],['form'] ] ] ] ]}}" placeholder="请填写审批意见" value="{{form.opinion}}" vueId="{{'32f965be-13-'+index+','+'32f965be-12-'+index}}"></u-input>
+                </u-form-item>
+                <u-form-item bind:__l="__l" borderBottom="{{true}}" class="data-v-10be605a" label="{{item[$orig].status!==0&&!onlyShow?item[$orig].nodeName:'待'+item[$orig].nodeName+'审批'}}" labelAlign="left" labelWidth="260" vueId="{{'32f965be-14-'+index+','+'32f965be-1'}}" vueSlots="{{['default']}}" wx:if="{{item[$orig].status===0||item[$orig].status===1}}">{{''+(item[$orig].operatorName||'')+''}}</u-form-item>
+            </block>
+        </view>
+    </u-form>
+    <u-gap bind:__l="__l" class="data-v-10be605a" height="240" vueId="32f965be-15"></u-gap>
+    <view class="fixed-bottom-area data-v-10be605a" wx:if="{{!onlyShow}}">
+        <view bindtap="__e" class="{{[ 'data-v-10be605a','custom-p-button',[disBtn?'disabled-btn':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'submitForm',[3] ] ] ] ]}}">不同意</view>
+        <view bindtap="__e" class="{{[ 'data-v-10be605a','custom-p-button','custom-p-button-right',[disBtn?'disabled-btn':''] ]}}" data-event-opts="{{[ [ 'tap',[ [ 'submitForm',[2] ] ] ] ]}}">同意</view>
+    </view>
+    <view class="fixed-bottom-area data-v-10be605a" wx:if="{{isCancelBtn}}">
+        <view bindtap="__e" class="{{['data-v-10be605a','custom-p-button','custom-p-button-cancel']}}" data-event-opts="{{[ [ 'tap',[ [ 'cancelWorkflow',['$event'] ] ] ] ]}}">取消</view>
+    </view>
+    <u-picker bind:__l="__l" bind:confirm="__e" bind:input="__e" class="data-v-10be605a" data-event-opts="{{[ [ '^confirm',[ ['confirmStartTime'] ] ],[ '^input',[ [ '__set_model',[ '','showStartTime','$event',[] ] ] ] ] ]}}" defaultTime="{{defaultStartTime}}" mode="time" params="{{pickerParams}}" value="{{showStartTime}}" vueId="32f965be-16"></u-picker>
+    <u-picker bind:__l="__l" bind:confirm="__e" bind:input="__e" class="data-v-10be605a" data-event-opts="{{[ [ '^confirm',[ ['confirmEndTime'] ] ],[ '^input',[ [ '__set_model',[ '','showEndTime','$event',[] ] ] ] ] ]}}" defaultTime="{{defaultEndTime}}" mode="time" params="{{pickerParams}}" value="{{showEndTime}}" vueId="32f965be-17"></u-picker>
+    <u-toast bind:__l="__l" class="data-v-10be605a vue-ref" data-ref="uToast" position="top" vueId="32f965be-18"></u-toast>
+    <u-modal bind:__l="__l" bind:confirm="__e" bind:input="__e" class="data-v-10be605a vue-ref" data-event-opts="{{[ [ '^confirm',[ ['confirm'] ] ],[ '^input',[ [ '__set_model',[ '','showModal','$event',[] ] ] ] ] ]}}" data-ref="uModal" showCancelButton="{{true}}" value="{{showModal}}" vueId="32f965be-19" vueSlots="{{['default']}}">
+        <view class="data-v-10be605a" style="padding:30rpx;">
+            <view class="data-v-10be605a" style="margin-bottom:30rpx;">选择下一个审批人：</view>
+            <u-radio-group bind:__l="__l" bind:input="__e" class="data-v-10be605a" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','nextOperatorId','$event',[] ],['form'] ] ] ] ]}}" value="{{form.nextOperatorId}}" vueId="{{'32f965be-20'+','+'32f965be-19'}}" vueSlots="{{['default']}}">
+                <u-radio activeColor="#52d1cc" bind:__l="__l" class="data-v-10be605a" name="{{item.id}}" vueId="{{'32f965be-21-'+index+','+'32f965be-20'}}" vueSlots="{{['default']}}" wx:for="{{auditUserList}}" wx:key="index">{{''+item.username+''}}</u-radio>
+            </u-radio-group>
+        </view>
+    </u-modal>
+</view>
