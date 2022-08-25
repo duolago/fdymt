@@ -1,0 +1,3 @@
+<view class="img-upload data-v-50403c1e">
+    <htz-image-upload bind:__l="__l" bind:chooseSuccess="__e" bind:imgDelete="__e" bind:input="__e" class="data-v-50403c1e" data-event-opts="{{[ [ '^chooseSuccess',[ ['chooseSuccess'] ] ],[ '^imgDelete',[ ['deletePic'] ] ],[ '^input',[ [ '__set_model',[ '','imageList','$event',[] ] ] ] ] ]}}" disabled="{{disabled}}" max="{{maxCount}}" remove="{{isDel}}" textSize="{{$root.m0}}" uploadStyle="{{uploadStyle}}" uploadText="{{uploadText}}" value="{{imageList}}" vueId="277e4789-1"></htz-image-upload>
+</view>

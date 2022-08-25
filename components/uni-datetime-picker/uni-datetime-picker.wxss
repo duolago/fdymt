@@ -1,0 +1,153 @@
+.uni-date-x {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #666;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.uni-date-x--border {
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.uni-date-editor--x {
+    position: relative;
+}
+
+.uni-date-editor--x .uni-date__icon-clear {
+    border: 6px solid transparent;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 6px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.uni-date__x-input {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 8px;
+    width: 100%;
+}
+
+.t-c {
+    text-align: center;
+}
+
+.uni-date__input {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.uni-date-range__input {
+    max-width: 142px;
+    text-align: center;
+}
+
+.uni-date-picker__container {
+    position: relative;
+}
+
+.uni-date-mask {
+    background-color: initial;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition-duration: .3s;
+    z-index: 996;
+}
+
+.uni-date-range--x,.uni-date-single--x {
+    background-color: #fff;
+    border: 1px solid #e4e7ed;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0/10%);
+    position: absolute;
+    top: 0;
+    z-index: 999;
+}
+
+.uni-date-editor--x__disabled {
+    cursor: default;
+    opacity: .4;
+}
+
+.uni-date-editor--logo {
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+}
+
+.popup-x-header,.popup-x-header--datetime {
+    display: flex;
+    flex-direction: row;
+}
+
+.popup-x-header--datetime {
+    flex: 1;
+}
+
+.popup-x-body {
+    display: flex;
+}
+
+.popup-x-footer {
+    background-color: #fff;
+    border-top: 1px solid #f1f1f1;
+    color: #666;
+    line-height: 40px;
+    padding: 0 15px;
+    text-align: right;
+}
+
+.popup-x-footer text:hover {
+    color: #007aff;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.popup-x-footer .confirm {
+    color: #007aff;
+    margin-left: 20px;
+}
+
+.uni-date-changed {
+    background-color: #fff;
+    border-bottom: 1px solid #f1f1f1;
+    color: #333;
+    text-align: center;
+}
+
+.uni-date-changed--time text {
+    height: 50px;
+    line-height: 50px;
+}
+
+.uni-date-changed .uni-date-changed--time {
+    flex: 1;
+}
+
+.uni-date-changed--time-date {
+    color: #333;
+    opacity: .6;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.uni-date_calendar-pc {
+    padding: 0 6px;
+}

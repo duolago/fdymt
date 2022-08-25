@@ -1,0 +1,20 @@
+<view bindtap="__e" class="slot-btn data-v-60fdc786" data-event-opts="{{[ [ 'tap',[ [ 'upFileOrPreview',['$event'] ] ] ] ]}}" hoverClass="{{!imageUrl?'slot-btn__hover':''}}" hoverStayTime="100" style="{{'border:'+(!imageUrl?'2rpx solid #f3f3f3':'none')+';'+'width:'+width*2.5+'rpx'+';'+'height:'+height*2.5+'rpx'+';'}}">
+    <block wx:if="{{!imageUrl}}">
+        <u-gap bind:__l="__l" class="data-v-60fdc786" height="20" vueId="0c2c1a46-1"></u-gap>
+        <u-image bind:__l="__l" class="data-v-60fdc786" fade="{{false}}" height="{{height}}" mode="aspectFit" showLoading="{{false}}" src="{{btnImage}}" vueId="0c2c1a46-2" width="{{width}}" wx:if="{{btnImage}}"></u-image>
+        <u-image bind:__l="__l" class="data-v-60fdc786" fade="{{false}}" height="{{height}}" mode="aspectFit" showLoading="{{false}}" src="/static/plus.png" style="padding-top:20rpx;" vueId="0c2c1a46-3" width="{{width}}" wx:else></u-image>
+        <label class="_span data-v-60fdc786" style="font-size:26rpx;color:#999999;margin-top:10rpx;">{{uploadText}}</label>
+    </block>
+    <view class="upload-image-item data-v-60fdc786" wx:if="{{imageUrl}}">
+        <u-image bind:__l="__l" class="data-v-60fdc786" fade="{{false}}" height="{{height*2.5}}" mode="{{imageMode}}" showLoading="{{false}}" src="{{imageUrl}}" vueId="0c2c1a46-4" width="{{width*2.5}}"></u-image>
+        <view catchtap="__e" class="upload-remove-icon data-v-60fdc786" data-event-opts="{{[ [ 'tap',[ [ 'removeImage',['$event'] ] ] ] ]}}" wx:if="{{!onlyShow}}">
+            <u-icon bind:__l="__l" class="data-v-60fdc786" color="#b0b0b0" name="/static/close-icon.png" size="50" vueId="0c2c1a46-5"></u-icon>
+        </view>
+    </view>
+    <u-modal bind:__l="__l" bind:input="__e" class="data-v-60fdc786" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','chooseOpen','$event',[] ] ] ] ] ]}}" maskCloseAble="{{true}}" showConfirmButton="{{false}}" showTitle="{{false}}" value="{{chooseOpen}}" vueId="0c2c1a46-6" vueSlots="{{['default']}}">
+        <u-cell-group bind:__l="__l" class="data-v-60fdc786" vueId="{{'0c2c1a46-7'+','+'0c2c1a46-6'}}" vueSlots="{{['default']}}">
+            <u-cell-item bind:__l="__l" bind:click="__e" class="data-v-60fdc786" data-event-opts="{{[ [ '^click',[ [ 'cameraChoose',[0] ] ] ] ]}}" title="拍摄照片" vueId="{{'0c2c1a46-8'+','+'0c2c1a46-7'}}" wx:if="{{!onlySelect}}"></u-cell-item>
+            <u-cell-item bind:__l="__l" bind:click="__e" class="data-v-60fdc786" data-event-opts="{{[ [ '^click',[ [ 'cameraChoose',[1] ] ] ] ]}}" title="选择照片" vueId="{{'0c2c1a46-9'+','+'0c2c1a46-7'}}"></u-cell-item>
+        </u-cell-group>
+    </u-modal>
+</view>

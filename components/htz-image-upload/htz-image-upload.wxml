@@ -1,0 +1,21 @@
+<view class="htz-image-upload-list">
+    <view class="htz-image-upload-Item" style="{{$root.s0}}" wx:for="{{$root.l0}}" wx:key="index">
+        <view class="htz-image-upload-Item-video" wx:if="{{item.m0}}">
+            <video controls="{{false}}" disabled="{{false}}" src="{{item.m1}}">
+                <cover-view bindtap="__e" class="htz-image-upload-Item-video-fixed" data-event-opts="{{[ [ 'tap',[ [ 'previewVideo',[item.m2] ] ] ] ]}}"></cover-view>
+                <cover-view bindtap="__e" class="htz-image-upload-Item-del-cover" data-event-opts="{{[ [ 'tap',[ [ 'imgDel',[index] ] ] ] ]}}" wx:if="{{remove&&previewVideoSrc==''}}">×</cover-view>
+            </video>
+        </view>
+        <image bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'imgPreview',[item.m4] ] ] ] ]}}" src="{{item.m3}}" wx:else></image>
+        <view bindtap="__e" class="htz-image-upload-Item-del" data-event-opts="{{[ [ 'tap',[ [ 'imgDel',[index] ] ] ] ]}}" wx:if="{{remove}}">×</view>
+    </view>
+    <view bindtap="__e" class="htz-image-upload-Item htz-image-upload-Item-add" data-event-opts="{{[ [ 'tap',[ [ 'chooseFile',['$event'] ] ] ] ]}}" style="{{$root.s1}}" wx:if="{{uploadLists.length<max&&add}}">
+        <view style="{{'font-size:'+'95rpx'+';'}}">+</view>
+        <view style="{{'font-size:'+textSize+';'}}">{{uploadText}}</view>
+    </view>
+    <view class="preview-full" wx:if="{{previewVideoSrc!=''}}">
+        <video autoplay="{{true}}" showFullscreenBtn="{{false}}" src="{{previewVideoSrc}}">
+            <cover-view bindtap="__e" class="preview-full-close" data-event-opts="{{[ [ 'tap',[ [ 'previewVideoClose',['$event'] ] ] ] ]}}">×</cover-view>
+        </video>
+    </view>
+</view>

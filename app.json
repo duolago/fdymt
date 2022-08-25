@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/index",
+    "pages/my/update-identify",
+    "pages/my/update-hsjc-code",
+    "pages/health/healthMgr",
+    "pages/health/add-daily-health-info",
+    "pages/health/add-health-trip",
+    "pages/risk/newest-list",
+    "pages/web/webview",
+    "pages/operate/success",
+    "pages/my/face-photography",
+    "pages/code-rules/newest-list",
+    "pages/back-school/add-record",
+    "pages/back-school/mgr-record-list",
+    "pages/go-out/add-report",
+    "pages/go-out/report-list",
+    "pages/my/msg-list",
+    "pages/my/msg-detail",
+    "pages/my/add-yqmp",
+    "pages/my/yqmp-list",
+    "pages/approval/approval-list",
+    "pages/my/add-workflow",
+    "pages/my/add-health",
+    "pages/my/manage-class-personnel-list",
+    "pages/visitor/visitor-list",
+    "pages/visitor/add-visitor"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#444444",
+    "selectedColor": "#A2A2A2",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/u104.png",
+        "selectedIconPath": "static/u85.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "static/u78.png",
+        "selectedIconPath": "static/u128.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
