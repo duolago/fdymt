@@ -1,0 +1,11 @@
+<view class="u-tabs data-v-63c22e0c" style="{{'background:'+bgColor+';'}}">
+    <view class="data-v-63c22e0c" id="{{id}}">
+        <scroll-view class="u-scroll-view data-v-63c22e0c" scrollLeft="{{scrollLeft}}" scrollWithAnimation="{{true}}" scrollX="{{true}}">
+            <view class="{{['u-scroll-box','data-v-63c22e0c',!isScroll?'u-tabs-scorll-flex':'']}}">
+                <view bindtap="__e" class="u-tab-item u-line-1 data-v-63c22e0c" data-event-opts="{{[ [ 'tap',[ [ 'clickTab',[index] ] ] ] ]}}" id="{{'u-tab-item-'+index}}" style="{{item.s0}}" wx:for="{{$root.l0}}" wx:key="index">
+                    <u-badge bind:__l="__l" class="data-v-63c22e0c" count="{{item[$orig][count]||item[$orig]['count']||0}}" offset="{{offset}}" size="mini" vueId="{{'6ae46646-1-'+index}}"></u-badge>{{''+( item[$orig][name]||item[$orig]['name'] )+''}}</view>
+                <view class="u-tab-bar data-v-63c22e0c" style="{{$root.s1}}" wx:if="{{showBar}}"></view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

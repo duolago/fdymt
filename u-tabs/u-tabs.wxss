@@ -1,0 +1,151 @@
+.text-cut-2.data-v-63c22e0c {
+    -webkit-line-clamp: 2;
+}
+
+.text-cut-1.data-v-63c22e0c,.text-cut-2.data-v-63c22e0c {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.text-cut-1.data-v-63c22e0c {
+    -webkit-line-clamp: 1;
+}
+
+.flex.data-v-63c22e0c {
+    display: flex;
+}
+
+.basis-xs.data-v-63c22e0c {
+    flex-basis: 20%;
+}
+
+.basis-sm.data-v-63c22e0c {
+    flex-basis: 40%;
+}
+
+.basis-df.data-v-63c22e0c {
+    flex-basis: 50%;
+}
+
+.basis-lg.data-v-63c22e0c {
+    flex-basis: 60%;
+}
+
+.basis-xl.data-v-63c22e0c {
+    flex-basis: 80%;
+}
+
+.flex-sub.data-v-63c22e0c {
+    flex: 1;
+}
+
+.flex-twice.data-v-63c22e0c {
+    flex: 2;
+}
+
+.flex-treble.data-v-63c22e0c {
+    flex: 3;
+}
+
+.flex-direction.data-v-63c22e0c {
+    flex-direction: column;
+}
+
+.flex-wrap.data-v-63c22e0c {
+    flex-wrap: wrap;
+}
+
+.align-start.data-v-63c22e0c {
+    align-items: flex-start;
+}
+
+.align-end.data-v-63c22e0c {
+    align-items: flex-end;
+}
+
+.align-center.data-v-63c22e0c {
+    align-items: center;
+}
+
+.self-start.data-v-63c22e0c {
+    align-self: flex-start;
+}
+
+.self-center.data-v-63c22e0c {
+    align-self: flex-center;
+}
+
+.self-end.data-v-63c22e0c {
+    align-self: flex-end;
+}
+
+.self-stretch.data-v-63c22e0c {
+    align-self: stretch;
+}
+
+.align-stretch.data-v-63c22e0c {
+    align-items: stretch;
+}
+
+.justify-start.data-v-63c22e0c {
+    justify-content: flex-start;
+}
+
+.justify-end.data-v-63c22e0c {
+    justify-content: flex-end;
+}
+
+.justify-center.data-v-63c22e0c {
+    justify-content: center;
+}
+
+.justify-between.data-v-63c22e0c {
+    justify-content: space-between;
+}
+
+.justify-around.data-v-63c22e0c {
+    justify-content: space-around;
+}
+
+scroll-view.data-v-63c22e0c,view.data-v-63c22e0c {
+    box-sizing: border-box;
+}
+
+.data-v-63c22e0c::-webkit-scrollbar {
+    -webkit-appearance: none;
+    background: transparent;
+    display: none;
+    height: 0!important;
+    width: 0!important;
+}
+
+.u-scroll-box.data-v-63c22e0c {
+    position: relative;
+}
+
+.u-scroll-view.data-v-63c22e0c {
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.u-tab-item.data-v-63c22e0c {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    transition-property: background-color,color;
+}
+
+.u-tab-bar.data-v-63c22e0c {
+    bottom: 0;
+    position: absolute;
+}
+
+.u-tabs-scorll-flex.data-v-63c22e0c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

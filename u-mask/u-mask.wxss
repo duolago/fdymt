@@ -1,0 +1,130 @@
+.text-cut-2.data-v-0d4c8696 {
+    -webkit-line-clamp: 2;
+}
+
+.text-cut-1.data-v-0d4c8696,.text-cut-2.data-v-0d4c8696 {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.text-cut-1.data-v-0d4c8696 {
+    -webkit-line-clamp: 1;
+}
+
+.flex.data-v-0d4c8696 {
+    display: flex;
+}
+
+.basis-xs.data-v-0d4c8696 {
+    flex-basis: 20%;
+}
+
+.basis-sm.data-v-0d4c8696 {
+    flex-basis: 40%;
+}
+
+.basis-df.data-v-0d4c8696 {
+    flex-basis: 50%;
+}
+
+.basis-lg.data-v-0d4c8696 {
+    flex-basis: 60%;
+}
+
+.basis-xl.data-v-0d4c8696 {
+    flex-basis: 80%;
+}
+
+.flex-sub.data-v-0d4c8696 {
+    flex: 1;
+}
+
+.flex-twice.data-v-0d4c8696 {
+    flex: 2;
+}
+
+.flex-treble.data-v-0d4c8696 {
+    flex: 3;
+}
+
+.flex-direction.data-v-0d4c8696 {
+    flex-direction: column;
+}
+
+.flex-wrap.data-v-0d4c8696 {
+    flex-wrap: wrap;
+}
+
+.align-start.data-v-0d4c8696 {
+    align-items: flex-start;
+}
+
+.align-end.data-v-0d4c8696 {
+    align-items: flex-end;
+}
+
+.align-center.data-v-0d4c8696 {
+    align-items: center;
+}
+
+.self-start.data-v-0d4c8696 {
+    align-self: flex-start;
+}
+
+.self-center.data-v-0d4c8696 {
+    align-self: flex-center;
+}
+
+.self-end.data-v-0d4c8696 {
+    align-self: flex-end;
+}
+
+.self-stretch.data-v-0d4c8696 {
+    align-self: stretch;
+}
+
+.align-stretch.data-v-0d4c8696 {
+    align-items: stretch;
+}
+
+.justify-start.data-v-0d4c8696 {
+    justify-content: flex-start;
+}
+
+.justify-end.data-v-0d4c8696 {
+    justify-content: flex-end;
+}
+
+.justify-center.data-v-0d4c8696 {
+    justify-content: center;
+}
+
+.justify-between.data-v-0d4c8696 {
+    justify-content: space-between;
+}
+
+.justify-around.data-v-0d4c8696 {
+    justify-content: space-around;
+}
+
+.u-mask.data-v-0d4c8696 {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: transform .3s;
+    transition: transform .3s,-webkit-transform .3s;
+}
+
+.u-mask-show.data-v-0d4c8696 {
+    opacity: 1;
+}
+
+.u-mask-zoom.data-v-0d4c8696 {
+    transform: scale(1.2);
+}

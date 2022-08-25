@@ -1,0 +1,152 @@
+.text-cut-2.data-v-cfc16b10 {
+    -webkit-line-clamp: 2;
+}
+
+.text-cut-1.data-v-cfc16b10,.text-cut-2.data-v-cfc16b10 {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.text-cut-1.data-v-cfc16b10 {
+    -webkit-line-clamp: 1;
+}
+
+.flex.data-v-cfc16b10 {
+    display: flex;
+}
+
+.basis-xs.data-v-cfc16b10 {
+    flex-basis: 20%;
+}
+
+.basis-sm.data-v-cfc16b10 {
+    flex-basis: 40%;
+}
+
+.basis-df.data-v-cfc16b10 {
+    flex-basis: 50%;
+}
+
+.basis-lg.data-v-cfc16b10 {
+    flex-basis: 60%;
+}
+
+.basis-xl.data-v-cfc16b10 {
+    flex-basis: 80%;
+}
+
+.flex-sub.data-v-cfc16b10 {
+    flex: 1;
+}
+
+.flex-twice.data-v-cfc16b10 {
+    flex: 2;
+}
+
+.flex-treble.data-v-cfc16b10 {
+    flex: 3;
+}
+
+.flex-direction.data-v-cfc16b10 {
+    flex-direction: column;
+}
+
+.flex-wrap.data-v-cfc16b10 {
+    flex-wrap: wrap;
+}
+
+.align-start.data-v-cfc16b10 {
+    align-items: flex-start;
+}
+
+.align-end.data-v-cfc16b10 {
+    align-items: flex-end;
+}
+
+.align-center.data-v-cfc16b10 {
+    align-items: center;
+}
+
+.self-start.data-v-cfc16b10 {
+    align-self: flex-start;
+}
+
+.self-center.data-v-cfc16b10 {
+    align-self: flex-center;
+}
+
+.self-end.data-v-cfc16b10 {
+    align-self: flex-end;
+}
+
+.self-stretch.data-v-cfc16b10 {
+    align-self: stretch;
+}
+
+.align-stretch.data-v-cfc16b10 {
+    align-items: stretch;
+}
+
+.justify-start.data-v-cfc16b10 {
+    justify-content: flex-start;
+}
+
+.justify-end.data-v-cfc16b10 {
+    justify-content: flex-end;
+}
+
+.justify-center.data-v-cfc16b10 {
+    justify-content: center;
+}
+
+.justify-between.data-v-cfc16b10 {
+    justify-content: space-between;
+}
+
+.justify-around.data-v-cfc16b10 {
+    justify-content: space-around;
+}
+
+.u-model.data-v-cfc16b10 {
+    background-color: #fff;
+    font-size: 32rpx;
+    height: auto;
+    overflow: hidden;
+}
+
+.u-model__btn--hover.data-v-cfc16b10 {
+    background-color: #e6e6e6;
+}
+
+.u-model__title.data-v-cfc16b10 {
+    color: #303133;
+    font-weight: 500;
+    padding-top: 48rpx;
+    text-align: center;
+}
+
+.u-model__content__message.data-v-cfc16b10 {
+    color: #606266;
+    font-size: 30rpx;
+    padding: 48rpx;
+    text-align: center;
+}
+
+.u-model__footer.data-v-cfc16b10 {
+    display: flex;
+    flex-direction: row;
+}
+
+.u-model__footer__button.data-v-cfc16b10 {
+    border-radius: 4rpx;
+    box-sizing: border-box;
+    cursor: pointer;
+    flex: 1;
+    font-size: 32rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+}

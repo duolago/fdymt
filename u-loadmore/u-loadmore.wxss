@@ -1,0 +1,148 @@
+.text-cut-2.data-v-0cb81791 {
+    -webkit-line-clamp: 2;
+}
+
+.text-cut-1.data-v-0cb81791,.text-cut-2.data-v-0cb81791 {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.text-cut-1.data-v-0cb81791 {
+    -webkit-line-clamp: 1;
+}
+
+.flex.data-v-0cb81791 {
+    display: flex;
+}
+
+.basis-xs.data-v-0cb81791 {
+    flex-basis: 20%;
+}
+
+.basis-sm.data-v-0cb81791 {
+    flex-basis: 40%;
+}
+
+.basis-df.data-v-0cb81791 {
+    flex-basis: 50%;
+}
+
+.basis-lg.data-v-0cb81791 {
+    flex-basis: 60%;
+}
+
+.basis-xl.data-v-0cb81791 {
+    flex-basis: 80%;
+}
+
+.flex-sub.data-v-0cb81791 {
+    flex: 1;
+}
+
+.flex-twice.data-v-0cb81791 {
+    flex: 2;
+}
+
+.flex-treble.data-v-0cb81791 {
+    flex: 3;
+}
+
+.flex-direction.data-v-0cb81791 {
+    flex-direction: column;
+}
+
+.flex-wrap.data-v-0cb81791 {
+    flex-wrap: wrap;
+}
+
+.align-start.data-v-0cb81791 {
+    align-items: flex-start;
+}
+
+.align-end.data-v-0cb81791 {
+    align-items: flex-end;
+}
+
+.align-center.data-v-0cb81791 {
+    align-items: center;
+}
+
+.self-start.data-v-0cb81791 {
+    align-self: flex-start;
+}
+
+.self-center.data-v-0cb81791 {
+    align-self: flex-center;
+}
+
+.self-end.data-v-0cb81791 {
+    align-self: flex-end;
+}
+
+.self-stretch.data-v-0cb81791 {
+    align-self: stretch;
+}
+
+.align-stretch.data-v-0cb81791 {
+    align-items: stretch;
+}
+
+.justify-start.data-v-0cb81791 {
+    justify-content: flex-start;
+}
+
+.justify-end.data-v-0cb81791 {
+    justify-content: flex-end;
+}
+
+.justify-center.data-v-0cb81791 {
+    justify-content: center;
+}
+
+.justify-between.data-v-0cb81791 {
+    justify-content: space-between;
+}
+
+.justify-around.data-v-0cb81791 {
+    justify-content: space-around;
+}
+
+u-line.data-v-0cb81791 {
+    flex: none;
+}
+
+.u-load-more-inner.data-v-0cb81791,.u-load-more-wrap.data-v-0cb81791 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.u-load-more-inner.data-v-0cb81791 {
+    padding: 0 12rpx;
+}
+
+.u-more.data-v-0cb81791 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.u-dot-text.data-v-0cb81791 {
+    font-size: 28rpx;
+}
+
+.u-loadmore-icon-wrap.data-v-0cb81791 {
+    margin-right: 8rpx;
+}
+
+.u-loadmore-icon.data-v-0cb81791 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

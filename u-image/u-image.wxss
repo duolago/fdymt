@@ -1,0 +1,136 @@
+.text-cut-2.data-v-1eabe72c {
+    -webkit-line-clamp: 2;
+}
+
+.text-cut-1.data-v-1eabe72c,.text-cut-2.data-v-1eabe72c {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.text-cut-1.data-v-1eabe72c {
+    -webkit-line-clamp: 1;
+}
+
+.flex.data-v-1eabe72c {
+    display: flex;
+}
+
+.basis-xs.data-v-1eabe72c {
+    flex-basis: 20%;
+}
+
+.basis-sm.data-v-1eabe72c {
+    flex-basis: 40%;
+}
+
+.basis-df.data-v-1eabe72c {
+    flex-basis: 50%;
+}
+
+.basis-lg.data-v-1eabe72c {
+    flex-basis: 60%;
+}
+
+.basis-xl.data-v-1eabe72c {
+    flex-basis: 80%;
+}
+
+.flex-sub.data-v-1eabe72c {
+    flex: 1;
+}
+
+.flex-twice.data-v-1eabe72c {
+    flex: 2;
+}
+
+.flex-treble.data-v-1eabe72c {
+    flex: 3;
+}
+
+.flex-direction.data-v-1eabe72c {
+    flex-direction: column;
+}
+
+.flex-wrap.data-v-1eabe72c {
+    flex-wrap: wrap;
+}
+
+.align-start.data-v-1eabe72c {
+    align-items: flex-start;
+}
+
+.align-end.data-v-1eabe72c {
+    align-items: flex-end;
+}
+
+.align-center.data-v-1eabe72c {
+    align-items: center;
+}
+
+.self-start.data-v-1eabe72c {
+    align-self: flex-start;
+}
+
+.self-center.data-v-1eabe72c {
+    align-self: flex-center;
+}
+
+.self-end.data-v-1eabe72c {
+    align-self: flex-end;
+}
+
+.self-stretch.data-v-1eabe72c {
+    align-self: stretch;
+}
+
+.align-stretch.data-v-1eabe72c {
+    align-items: stretch;
+}
+
+.justify-start.data-v-1eabe72c {
+    justify-content: flex-start;
+}
+
+.justify-end.data-v-1eabe72c {
+    justify-content: flex-end;
+}
+
+.justify-center.data-v-1eabe72c {
+    justify-content: center;
+}
+
+.justify-between.data-v-1eabe72c {
+    justify-content: space-between;
+}
+
+.justify-around.data-v-1eabe72c {
+    justify-content: space-around;
+}
+
+.u-image.data-v-1eabe72c {
+    position: relative;
+    transition: opacity .5s ease-in-out;
+}
+
+.u-image__image.data-v-1eabe72c {
+    height: 100%;
+    width: 100%;
+}
+
+.u-image__error.data-v-1eabe72c,.u-image__loading.data-v-1eabe72c {
+    align-items: center;
+    background-color: #f3f4f6;
+    color: #909399;
+    display: flex;
+    flex-direction: row;
+    font-size: 46rpx;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
